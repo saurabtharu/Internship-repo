@@ -26,8 +26,10 @@
   justify: true,
 )
 
+// For paragraph spacing
+#show par: set block(spacing: 1.65em)       /* If the lines are separated by parbreack() */
 
-#show par: set block(spacing: 0.65em)
+// For line spacing
 #show par: set par(leading: 1em)
 
 #set page(
