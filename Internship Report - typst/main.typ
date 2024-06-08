@@ -33,7 +33,7 @@
 #show par: set par(leading: 1em)
 
 #set page(
-  margin: (top: 2.54cm, bottom: 2.54cm, left: 3.17cm, right: 2.54cm),
+  margin: (top: 1in, bottom: 1in, left: 1.25in, right: 1in),
   binding: left,
   header: [
       #set text(10pt)
