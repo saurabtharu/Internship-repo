@@ -38,6 +38,7 @@ Not just practical experience, but also the critical role of DevOps to bridge th
 
 
 == 1.1. Introduction
+#v(15pt, weak: true)
 Over the course of my internship at F1Soft International, I had the chance to fully embrace their DevOps culture and see how it has been used effectively in bridging the gap between software development and IT operations. F1Soft International is one of the most well-known names in innovative financial solutions, offering a wide array of innovative and advanced solutions to commercial banks, development banks, financial institutions, and several other large enterprises. The company is committed to using advanced technology with the view of enhancing financial inclusion and making digital experience seamless. My primary responsibility, as a member of their DevOps team, has been to learn how to streamline and enhance the development and operational processes, so that the resulting systems could be robust, efficient, and reliable.
 
 My main duty included understanding implementation of DevOps practices to automate and simplify different parts of the software delivery process. This entailed creation as well as optimization of Continuous Integration/Continuous Deployment (CI/CD) pipelines which automate integration of code changes frequently and reliably should be deployed; they are important in reducing time-to-market while increasing overall development team's productivity. 
@@ -53,26 +54,28 @@ I got real world experience with DevOps apart from the theoretical knowledge tha
 
   
 == 1.2. Problem Statement
+#v(15pt, weak: true)
 
 F1Soft International, like many tech-driven organizations, faced challenges related to the manual processes in software deployment, the scalability of their infrastructure, and the efficiency of their operational workflows. The primary issues included:
+#set enum(numbering: "i)")
++ *Manual Deployment Processes*: \ The existing deployment processes were largely manual, leading to inconsistencies, longer deployment times, and higher risk of errors.
 
-- *Manual Deployment Processes*: \ The existing deployment processes were largely manual, leading to inconsistencies, longer deployment times, and higher risk of errors.
++ *Infrastructure Scalability*: \ With a growing user base, the need for scalable infrastructure became critical. The current setup struggled to efficiently handle the increased load, affecting performance and user experience.
 
-- *Infrastructure Scalability*: \ With a growing user base, the need for scalable infrastructure became critical. The current setup struggled to efficiently handle the increased load, affecting performance and user experience.
-
-- *Operational Efficiency*: \ The lack of automated workflows resulted in slower response times to incidents and less efficient use of resources.
++ *Operational Efficiency*: \ The lack of automated workflows resulted in slower response times to incidents and less efficient use of resources.
 Addressing these problems was crucial for maintaining F1Soft’s competitive edge, ensuring customer satisfaction, and supporting the company’s growth objectives.
 
 
   
 == 1.3. Objectives
+#v(15pt, weak: true)
  The primary objectives of my internship at F1Soft International were:
-#set enum(numbering: "i.")
+#set enum(numbering: "i)")
 
 
-+ *Gain Professional Experience*: Work in a real-world corporate environment to understand team dynamics, project management, and effective communication within a professional setting.
++ *Gain Professional Experience*: \ Work in a real-world corporate environment to understand team dynamics, project management, and effective communication within a professional setting.
 
-+ *Develop Problem-Solving Skills*: Tackle real-world challenges and develop solutions, enhancing critical thinking and problem-solving abilities.
++ *Develop Problem-Solving Skills*: \ Tackle real-world challenges and develop solutions, enhancing critical thinking and problem-solving abilities.
 
 + *Automate Deployment Processes*: \ Implement CI/CD pipelines to automate the build, test, and deployment processes, reducing deployment time and errors.
 
@@ -80,18 +83,19 @@ Addressing these problems was crucial for maintaining F1Soft’s competitive edg
 
 
 == 1.4. Scope and Limitation
+#v(15pt, weak: true)
 
 
 *1.4.1. Scope* \
 The scope of my internship included the following key areas:
 
-+ *CI/CD Pipeline Implementation*: Setting up automated pipelines for continuous integration and deployment on bare-metal servers.
++ *CI/CD Pipeline Implementation*: \ Setting up automated pipelines for continuous integration and deployment on bare-metal servers.
 
-+ *Bare-Metal Infrastructure Management*: Designing and deploying scalable solutions using physical servers.
++ *Bare-Metal Infrastructure Management*: \ Designing and deploying scalable solutions using physical servers.
 
-+ *Monitoring and Alerting*: Implementing tools like Prometheus and Grafana for monitoring and setting up alerting mechanisms.
++ *Monitoring and Alerting*: \ Implementing tools like Prometheus and Grafana for monitoring and setting up alerting mechanisms.
 
-+ *Security Enhancements*: Adding security checks within the CI/CD pipeline and ensuring infrastructure compliance with security standards.
++ *Security Enhancements*: \ Adding security checks within the CI/CD pipeline and ensuring infrastructure compliance with security standards.
 
 
 
@@ -111,6 +115,7 @@ Despite the comprehensive scope, there were some limitations during my internshi
 
 
 == 1.5. Report Organization
+#v(15pt, weak: true)
 
 This report is structured into four main chapters, each detailing different aspects of my internship experience at F1Soft International. Here is a brief overview of each chapter:
 
