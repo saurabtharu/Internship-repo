@@ -2,11 +2,28 @@
 
 = Chapter 4: Conclusion and Learning Outcomes 
 
-== 4.1. Conclusion 
+== 4.1. Completed Tasks
 #v(15pt, weak: true)
+#set enum(numbering: "i.")
++ Sucessfully deployed nginx website and implemented SSL Certificate for secure communication.
+
++ Deployed Java Application in tomcat and configured nginx for reverse proxy for the java application.
++ Configured to monitor a particular process and send alert on crashes.
++ Configured self-hosted git service on local infrastructure .
++ Setup MySQL replication for data backup and incident recovery
++ Configured distributed file system (NFS) to share files among various nodes within a network.
 
 
+== 4.2 Remaining Tasks
 
++ ArgoCD for continuous delivery.
+
++ K3S for managing workload and services.
+// In conclusion, the internship at F1Soft International  as a DevOps Engineer exposed me to various aspects of DevOps. This included knowledge gain in diverse DevOps areas like setting up CI/CD pipelines, management of bare-metal infrastructure, utilizing Kubernetes (K3s) for container orchestration, implementation of monitoring tools such as Prometheus and Grafana, and ensuring security along the CI/CD pipeline.
+
+// Practical projects were done using theoretical knowledge acquired from the program. At the end of it all, adopting different DevOps methodologies that were learnt brought about better system performance and reliability. With the help of mentors and other colleagues, my interpersonal skills were also sharpened during this successful stint henceforth having a huge positive influence on me both professionally and personally.
+
+/*
 == 4.2. Learning Outcome 
 #v(15pt, weak: true)
 Throughout my internship at F1Soft International, I was exposed to a comprehensive range of DevOps practices and technologies, which significantly expanded my technical skill set and deepened my understanding of DevOps in a real-world fintech environment. Here are the key areas where I gained substantial knowledge and practical experience:
@@ -58,6 +75,6 @@ Throughout my internship at F1Soft International, I was exposed to a comprehensi
  These experiences have significantly enhanced my technical skills and prepared me for future roles in the DevOps field. The comprehensive exposure to various tools, technologies, and practices has equipped me with the knowledge and confidence to tackle complex DevOps challenges and contribute effectively to any technology-driven organization.
  
 
-
+*/
 
 #pagebreak()

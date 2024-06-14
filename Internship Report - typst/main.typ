@@ -1,18 +1,19 @@
-#import "./template.typ": *
+ #import "./template.typ": *
 
 #show raw.where(block: true): block.with(
-  fill: luma(240),
+  // fill: luma(240),
   inset: (x:5pt,y: 10pt),
-  outset: (x:10pt, y: 1pt),
+  outset: (x:0pt, y: 1pt),
   radius: 7pt,
+  // stroke: 
 )
 
-#show raw.where(block: false): box.with(
-  fill: luma(240),
-  inset: (x: 3pt, y: 0pt),
-  outset: (y: 3pt),
-  radius: 2pt,
-)
+// #show raw.where(block: false): box.with(
+//   // ,
+//   inset: (x: 3pt, y: 0pt),
+//   outset: (y: 3pt),
+//   radius: 2pt,
+// )
 
 
 #show heading.where(level: 1): set text(16pt) 
@@ -44,12 +45,15 @@
 #set text(font: "Times New Roman") 
 
 /******************************************************************/
-#include "chapters/0-cover.typ"
+#set page(numbering: "i")
+#counter(page).update(1)
+#include "chapters/0-cover.typ" 
+// #include "chapters/0-cover-abhijeet.typ"
 
 
 #include "./chapters/00-cert-ack.typ"
-#set page(numbering: "i")
-#counter(page).update(1)
+// #include "chapters/00-cert-ack-abhijeet.typ"
+
 #include "./chapters/01-abstract.typ"
 #include "./chapters/02-toc-list_of_abb-fig-tables.typ"
 

@@ -2,11 +2,11 @@
 
 
 /* #show par: set block(spacing: 0.65em) */
-#show raw.where(block: true): block.with(
-  fill: luma(240),
-  inset: 10pt,
-  radius: 4pt,
-)
+// #show raw.where(block: true): block.with(
+//   fill: luma(240),
+//   inset: 10pt,
+//   radius: 4pt,
+// )
 
 
 #let cell = rect.with(

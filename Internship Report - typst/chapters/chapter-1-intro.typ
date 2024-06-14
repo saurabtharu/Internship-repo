@@ -39,16 +39,15 @@ Not just practical experience, but also the critical role of DevOps to bridge th
 
 == 1.1. Introduction
 #v(15pt, weak: true)
-Over the course of my internship at F1Soft International, I had the chance to fully embrace their DevOps culture and see how it has been used effectively in bridging the gap between software development and IT operations. F1Soft International is one of the most well-known names in innovative financial solutions, offering a wide array of innovative and advanced solutions to commercial banks, development banks, financial institutions, and several other large enterprises. The company is committed to using advanced technology with the view of enhancing financial inclusion and making digital experience seamless. My primary responsibility, as a member of their DevOps team, has been to learn how to streamline and enhance the development and operational processes, so that the resulting systems could be robust, efficient, and reliable.
+Over the course of my DevOps internship at F1Soft International, the chance was given to fully embrace the DevOps culture and observe how it has been used effectively to bridge the gap between software development and IT operations. F1Soft International is one of the most well-known names in innovative financial solutions, offering a wide array of innovative and advanced solutions to commercial banks, development banks, financial institutions, and several other large enterprises. The company is committed to using advanced technology with the view of enhancing financial inclusion and making digital experience seamless.The primary responsibility, as a member of the DevOps team, has been to learn how to streamline and enhance the development and operational processes, so that the resulting systems could be robust, efficient, and reliable.
 
-My main duty included understanding implementation of DevOps practices to automate and simplify different parts of the software delivery process. This entailed creation as well as optimization of Continuous Integration/Continuous Deployment (CI/CD) pipelines which automate integration of code changes frequently and reliably should be deployed; they are important in reducing time-to-market while increasing overall development team's productivity. 
+The main duty included understanding the implementation of DevOps practices to automate and simplify different parts of the software delivery process. This entailed creation as well as optimization of Continuous Integration/Continuous Deployment (CI/CD) pipelines which automate integration of code changes frequently and reliably should be deployed; they are important in reducing time-to-market while increasing overall development team's productivity. 
 
-Additionally, I also got a chance to look into how corporations utilize automation for handling repetitive tasks in their environments. Automation not only saves time but also lowers human error thus increasing reliability; it should therefore yield consistent results always too. During this period, I got practical experience on automating routine operations, configuring infrastructures easily without any challenges faced and managing applications seamlessly deployed across different systems or platforms. 
+Additionally, there was an opportunity was given to observe how corporations utilize automation for handling repetitive tasks in their environments. Automation not only saves time but also reduces human error, thereby increasing reliability and yielding consistent results. Practical experience was gained in automating routine operations, configuring infrastructures without any challenges, and managing applications seamlessly deployed across different systems or platforms.
 
-This paper serves as a documentation of my internship experience showing what projects I worked on, where difficulties arose and how they were solved. It also indicates the skills gained and knowledge acquired which contributed immensely to shaping me into becoming an expert DevOps professional.
+// This paper serves as a documentation of my internship experience showing what projects I worked on, where difficulties arose and how they were solved. It also indicates the skills gained and knowledge acquired which contributed immensely to shaping me into becoming an expert DevOps professional.
 
-I got real world experience with DevOps apart from the theoretical knowledge that I had. I also understood better how collaborative and iterative DevOps is. F1Soft has been able to produce quality software faster because they focus on continuous improvement, automation as well as ensuring effective communication among development and operations teams. These skills and ideas will help me handle any other challenges that come my way in this area hence becoming an even better engineer. 
-
+Real-world experience with DevOps, complementing the theoretical knowledge I previously acquired, has been one of the best outcomes of this internship. A better understanding of the collaborative and iterative nature of DevOps was also achieved. F1Soft has been able to produce quality software faster by focusing on continuous improvement, automation, and ensuring effective communication between development and operations teams. These skills and ideas will help in handling future challenges in this area, thereby contributing to becoming an even better engineer.
 
 
 
@@ -57,12 +56,14 @@ I got real world experience with DevOps apart from the theoretical knowledge tha
 #v(15pt, weak: true)
 
 F1Soft International, like many tech-driven organizations, faced challenges related to the manual processes in software deployment, the scalability of their infrastructure, and the efficiency of their operational workflows. The primary issues included:
+
 #set enum(numbering: "i)")
 + *Manual Deployment Processes*: \ The existing deployment processes were largely manual, leading to inconsistencies, longer deployment times, and higher risk of errors.
 
 + *Infrastructure Scalability*: \ With a growing user base, the need for scalable infrastructure became critical. The current setup struggled to efficiently handle the increased load, affecting performance and user experience.
 
 + *Operational Efficiency*: \ The lack of automated workflows resulted in slower response times to incidents and less efficient use of resources.
+
 Addressing these problems was crucial for maintaining F1Soft’s competitive edge, ensuring customer satisfaction, and supporting the company’s growth objectives.
 
 
@@ -121,9 +122,9 @@ This report is structured into four main chapters, each detailing different aspe
 
 + *Chapter 1: Introduction* \ This chapter introduces the work completed during my internship. It outlines the problem statement, the objectives of the internship, the scope and limitations of the project, and provides an overview of the report’s organization.
 
-+ *Chapter 2: Organization Details and Literature Review* \ In this chapter, I provide a comprehensive introduction to F1Soft International. This includes an overview of the organization, its hierarchy, the various domains in which it operates, and a detailed description of the department or unit where I interned. Additionally, this chapter includes a literature review or related study, highlighting relevant theories and frameworks that underpin the work I performed during the internship.
++ *Chapter 2: Organization Details and Literature Review* \ In this chapter, a comprehensive introduction to F1Soft International has been provided. This includes an overview of the organization, its hierarchy, the various domains in which it operates, and a detailed description of the department where internship has been completed. Additionally, this chapter includes a literature review or related study, highlighting relevant theories and frameworks that underpin the works that have been performed during the internship.
 
-+ *Chapter 3: Internship Activities* \ This chapter delves into the specifics of my internship activities. It outlines my roles and responsibilities, provides a weekly log of the technical activities I performed, describes the projects I was involved in, and details the technical tasks and activities I completed. This section offers an in-depth look at the hands-on experience I gained and the contributions I made to the organization.
++ *Chapter 3: Internship Activities* \ This chapter delves into the specifics of my internship activities. It outlines my roles and responsibilities, provides a weekly log of the technical activities, describes the involved projects, and details the technical tasks and activities have been completed successfully. This section offers an in-depth look at the hands-on experience obtained.
 
 
 + *Chapter 4: Conclusion and Learning Outcomes* \ A brief overview of the experience gained during the internship is also stated in this last part, as well as the main conclusions. It mentions my skills and knowledge, challenges I faced and how I dealt with them. Additionally, the section talks about what the future holds in terms of career development after such an opportunity. 
