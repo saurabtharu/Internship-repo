@@ -47,6 +47,7 @@ F1Soft is the market leader in the fintech industry due to its unwavering dedica
 
 
 
+#v(10pt)
 == 2.2. Organizational Hierarchy 
 #v(15pt, weak: true)
 
@@ -61,6 +62,7 @@ F1Soft International prioritizes innovation through its structure. The Board set
 )*
 
 
+#v(10pt)
 == 2.3. Working Domains of Organization 
 #v(15pt, weak: true)
 F1Soft International Pvt. Ltd is among the top technology firms located in Nepal that mainly focuses on financial technology solutions (fintech). Since its establishment in 2004, F1Soft has revolutionized digital financial services thus changing Nepalese and regional financial sector landscape. The company operates principally in: 
@@ -91,12 +93,14 @@ F1Soft International Pvt. Ltd is among the top technology firms located in Nepal
 
  
 
+#v(10pt)
 == 2.4.  Description of Intern Department
 #v(15pt, weak: true)
 During my internship at F1Soft International Pvt. Ltd., I was placed in the dynamic DevOps department, which plays a crucial role in the company’s IT infrastructure and operations. The DevOps team is responsible for ensuring seamless integration and deployment processes, enabling continuous delivery and integration (CI/CD) of applications. This involves managing infrastructure automation, monitoring system performance, and enhancing deployment efficiency through streamlined processes and tools. Each team within the department is led by a dedicated team lead who oversees operations and delegates responsibilities to team members. Under the guidance of System Support and Deployment Department, the department fosters a collaborative and energetic environment that enables its teams to deliver exceptional results.
 
 As a DevOps intern, I had the opportunity to work under the guidance of my mentors, Sagar Khatiwada and Avash Shakya who provided invaluable assistance throughout my tenure. My responsibilities included assisting in the setup and maintenance of CI/CD pipelines, working with tools like Docker, Kubernetes, and Ansible for infrastructure automation, and implementing monitoring tools to track system performance. Additionally, I wrote scripts to automate routine tasks, improving overall efficiency in deployment and maintenance processes. This hands-on experience in DevOps practices, coupled with the support and mentorship from my team, significantly enhanced my technical skills and prepared me for a future career in the DevOps field. The collaborative and energetic environment at F1Soft allowed me to develop professionally and contribute effectively to the team's objectives.
 
+#v(10pt)
 == 2.5.  Literature Review
 #v(15pt, weak: true)
 

@@ -64,6 +64,7 @@
 = LIST OF ABBREVIATIONS
 \
 
+
  
   #table(
     columns: (1fr, 2fr),  

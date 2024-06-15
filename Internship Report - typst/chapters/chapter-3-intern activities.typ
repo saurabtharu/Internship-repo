@@ -76,6 +76,7 @@ While during the internship I was involved in writing Bash scripts that helped a
 
 */
 
+#v(10pt)
 == 3.2. Weekly log
 #v(15pt, weak: true)
 Following table shows the weekly activities the intern performed throughout their internship period.
@@ -159,6 +160,7 @@ Following table shows the weekly activities the intern performed throughout thei
 
 
 
+#v(10pt)
 == 3.3. Description of the Project(s) Involved During Internship 
 #v(15pt, weak: true)
 One of the highlights which really helped me in understanding DevOps principles was working on two minor projects during my internship both using local infrastructure. 
@@ -195,6 +197,7 @@ The project demonstrated a robust, automated deployment process with real-time s
 These projects provided hands-on experience with several key DevOps tools and practices, such as Jenkins, Docker, K3s, git-sync, Nginx, SSL certificates. The practical knowledge gained from these projects significantly enhanced my skills in automating, managing, and securing deployments in a production environment, all within the scope of local infrastructure.
 
 
+#v(10pt)
 == 3.4. Tasks / Activities Performed 
 #v(15pt, weak: true)
 
@@ -357,7 +360,7 @@ CMD ["nginx", "-g", "daemon off;"]
 )*
 
 \ \
-*Step 5*: Configure the jenkins project by adding *"Exectue shell"* build step and use the following shell script and save the configuration.
+- Configure the jenkins project by adding *"Exectue shell"* build step and use the following shell script and save the configuration.
 
 #box(
   width: 1fr,
@@ -382,7 +385,7 @@ docker logout
 )
 
 
-*Step 5*: Finally build the project and check the *"Console Output"* to verify if build was successful or not.
+- Finally build the project and check the *"Console Output"* to verify if build was successful or not.
 
 
   *#img(
@@ -683,7 +686,7 @@ spec:
           mountPath: /data
         env:
         - name: GITSYNC_REPO
-          value: "https://github.com/abhizeetyadav/newtestt.git"
+          value: "http://192.168.33.11:3000/saurab/website-for-git-sync.git"
         - name: GIT_SYNC_BRANCH
           value: "main"
         - name: GITSYNC_ROOT
@@ -767,8 +770,8 @@ spec:
 
 
 
+This `nginx-service.yaml` defines a Kubernetes `Service` named `nginx-service` in the `nginx` namespace. It uses a `NodePort` to expose port 80, forwarding traffic from the service on port 80 to the pods labeled `app: nginx-cc` on port 80, accessible via node IP on port 30002.
 
-  In this nginx-namespace.yaml, defines a Kubernetes Namespace resource named nginx. 
 
 *`File: nginx-namespace.yaml`*
 
@@ -791,7 +794,6 @@ metadata:
 
 
 
-This `nginx-service.yaml` defines a Kubernetes `Service` named `nginx-service` in the `nginx` namespace. It uses a `NodePort` to expose port 80, forwarding traffic from the service on port 80 to the pods labeled `app: nginx-cc` on port 80, accessible via node IP on port 30002.
 
 *`File: nginx-service.yaml`*
 #v(-11pt)
@@ -825,7 +827,7 @@ spec:
 // ```
 // )
 
-
+\
 Apply the configuration to the k3s cluster using kubectl using commands as below:
 
 #box( 
@@ -845,7 +847,8 @@ $ kubectl apply -f nginx-service.yaml
 
 The above deployment file to  work we need a git repo so for that self hosted Gitea  was used. To install the Gitea following bash script is used:
 
-*`File: gitea-installation.sh`*\
+*`File: gitea-installation.sh`*
+#v(-11pt)
 #box(
 
   width: 1fr,
@@ -853,7 +856,6 @@ The above deployment file to  work we need a git repo so for that self hosted Gi
 
   ```bash
   #!/bin/bash
-
 # Create a directory and navigate into it
 mkdir gitea
 cd gitea

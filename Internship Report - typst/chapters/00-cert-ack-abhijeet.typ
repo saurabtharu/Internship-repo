@@ -2,10 +2,15 @@
 
 \ 
 #text(12pt)[
-  This is to recommend that *Saurab Tharu* has submitted the internship report entitled
-*“An Internship report on DevOps Engineer at F1Soft Pvt. Ltd.”* for the fulfillment of the
-requirement of the Bachelor’s degree of Computer Science and Information Technology (BSc. CSIT) is processed for the evaluation.
+/*
+  This is to recommend that *Mr. Saurab Tharu* has carried out the internship project entitled
+“An Internship report on *DevOps Engineer at F1Soft Pvt. Ltd*.” for the fulfillment of the
+requirement of the Bachelor’s degree of Computer Science and Information Technology(BSc. CSIT) is processed for the evaluation.
+*/
 
+This is to recommend that *Mr. Abhijeet Yadav* has carried out the internship project entitled
+*“An Internship report on DevOps Engineer at F1Soft Pvt. Ltd*.” for the fulfillment of the
+requirement of the Bachelor’s degree of Computer Science and Information Technology(BSc. CSIT) is processed for the evaluation.
 \ \ \ \ \ \ \ \ 
 
 
@@ -20,32 +25,52 @@ Pulchowk, Lalitpur
 
 ]
 
+/*
 #pagebreak()
 #align(center,
   image("../images/ACHS.png", height: 20%)
+)
+*/
+
+
+#pagebreak()
+#align(center,
+  image("../images/images.png", height: 20%)
 )
 
 = SUPERVISOR’S RECOMMENDATION
 \
 
+/*
   #text(12pt)[
-    I hereby recommend that this report has been prepared under my supervision by *Saurab Tharu* entitled *An Internship Report on DevOps Engineer at F1Soft International Pvt. Ltd.* in partial fulfillment of the requirements for the degree of Bachelor of Science in Computer Science and Information Technology of Tribhuvan University is processed for
+    I hereby recommend that this report has been prepared under my supervision by Saurab Tharu entitled *An Internship Report on DevOps Engineer at F1Soft International Pvt. Ltd.* in partial fulfillment of the requirements for the degree of Bachelor of Science in Computer Science and Information Technology of Tribhuvan University is processed for
 the evaluation.
 
+  */
 
+    #text(12pt)[
+    I hereby recommend that this report has been prepared under my supervision by Abhijeet Yadav entitled *An Internship Report on DevOps Engineer at F1Soft International Pvt. Ltd.* in partial fulfillment of the requirements for the degree of Bachelor of Science in Computer Science and Information Technology of Tribhuvan University is processed for
+the evaluation.
 
   #block(
     spacing: 3em,
     table(
-      inset: (
-        x: 10pt,
-        y: 80pt
-      ),
-      stroke: none,
-      columns: (1fr, 0.3fr),
-       [  #line(length: 15em,stroke: (thickness: 1pt, dash: ("dot",4pt))) *Er. Bidur Sapkota* #v(-4pt) Supervisor #v(-4pt) Department of Computer Science and Information Technology #v(-4pt) Asian College of Higher Studies #v(-4pt) Ekantakuna, Lalitpur ], [],
-     
-    )
+    inset: (
+      x: 10pt,
+      y: 80pt
+    ),
+    /*
+    columns: (1fr, 0.3fr),
+     [  #line(length: 15em,stroke: (thickness: 1pt, dash: ("dot",4pt))) *Er. Bidur Sapkota* #parbreak() Supervisor #parbreak() Department of Computer Science and Information Technology #parbreak() Asian College of Higher Studies #parbreak() Ekantakuna, Lalitpur ], [],
+    */
+
+columns: (1fr, 0.3fr),
+     [  #line(length: 15em,stroke: (thickness: 1pt, dash: ("dot",4pt))) *Mr. Dinesh Khadka* #parbreak() Supervisor #parbreak() Department of Computer Science and Information Technology #parbreak() National College of Computer Studies #parbreak() Paknajol, Kathmandu ], [],
+
+
+    
+    stroke: none
+  )
 
 )]
 
@@ -55,18 +80,21 @@ the evaluation.
 #pagebreak()
 /**************************************************************************************/
 
+/*
 #align(center,
   image("../images/ACHS.png", height: 20%)
 )
 
+*/
 
 = LETTER OF APPROVAL
+/*
 \
 
 #text(12pt)[
 
-  This is to certify that this internship report prepared by *Saurab Tharu* entitled
-*“An Internship report on DevOps Engineer at F1Soft Pvt. Ltd”* has been submitted to the Department of Computer Science for
+  This is to certify that this internship report prepared by Adarsha Raj Acharya entitled
+“Insured Application” has been submitted to the Department of Computer Science for
 acceptance in partial fulfillment of the requirements for the degree of B.Sc. in Computer
 Science and Information Technology. In our opinion, it is satisfactory in the scope and
 quality as a project for the required degree
@@ -82,7 +110,7 @@ quality as a project for the required degree
     align: (center, center),
     // [*Signature of Supervisor*], [*Signature of HOD/ Coordinator *],
     [ *Signature of Supervisor* \ \ \ \  #line(length: 12em,stroke: (thickness: 1pt, dash: ("dot",4pt))) *Er. Bidur Sapkota* \ Asian College of Higher Studies ], 
-    [ *Signature of Mentor \ \ \ \ * #line(length: 12em,stroke: (thickness: 1pt, dash: ("dot",4pt))) *Mr. Sagar Khatiwada* \  F1Soft International Pvt. Ltd ],
+    [ *Signature of HOD/ Coordinator \ \ \ \ * #line(length: 12em,stroke: (thickness: 1pt, dash: ("dot",4pt))) *Mr. Sagar Khatiwada* \  F1Soft International Pvt. Ltd ],
 
     
     // [*Signature of External Examiner *],[],
@@ -99,12 +127,14 @@ quality as a project for the required degree
   )
 ]
 
+*/
 
 
 
 #pagebreak()
 /************************************************************************/
 
+/*
 
 = ACKNOWLEDGEMENT
 \
@@ -128,12 +158,14 @@ activities.
 With Regards, \
 Saurab Tharu (24256/76)
 \
+*/
 
 /************************************************************************/
 
+= ACKNOWLEDGEMENT
+\
 
 
-/*
 Deepest appreciation is expressed to all those who provided the possibility to complete this internship report. Special gratitude is extended to the supervisor, *Mr. Dinesh Khadka*, for the complete support and guidance throughout the internship period.
 
 // Special gratitude is also expressed to the Program Coordinator, Pranaya Nakarmi, and the administrative staff whose all-time encouragement helped the internship tasks to be coordinated systematically.
@@ -142,6 +174,8 @@ Sincere thanks are expressed to the mentors, *Mr. Sagar Khatiwada* and* Mr. Avas
 
 With all due respect and gratitude, a word of thanks is given to the members of the IT department of National College of Computer Studies, who encouraged the performance of work activities.
 
-*/
+\ \ 
+With Regards, \
+Abhijeet Yadav(23813/76)
 
 #pagebreak()

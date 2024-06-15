@@ -52,6 +52,7 @@ Real-world experience with DevOps, complementing the theoretical knowledge I pre
 
 
   
+#v(10pt)
 == 1.2. Problem Statement
 #v(15pt, weak: true)
 
@@ -68,6 +69,7 @@ Addressing these problems was crucial for maintaining F1Soft’s competitive edg
 
 
   
+#v(10pt)
 == 1.3. Objectives
 #v(15pt, weak: true)
  The primary objectives of my internship at F1Soft International were:
@@ -83,6 +85,7 @@ Addressing these problems was crucial for maintaining F1Soft’s competitive edg
 + *Improve Operational Efficiency*: \ Develop and integrate automated monitoring and alerting systems to enhance incident response times and operational efficiency.
 
 
+#v(10pt)
 == 1.4. Scope and Limitation
 #v(15pt, weak: true)
 
@@ -115,6 +118,7 @@ Despite the comprehensive scope, there were some limitations during my internshi
 
 
 
+#v(10pt)
 == 1.5. Report Organization
 #v(15pt, weak: true)
 

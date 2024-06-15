@@ -1,7 +1,8 @@
 #import "../template.typ": *
 
 = Chapter 4: Conclusion and Learning Outcomes 
-
+\
+/*
 == 4.1. Completed Tasks
 #v(15pt, weak: true)
 #set enum(numbering: "i.")
@@ -19,13 +20,40 @@
 + ArgoCD for continuous delivery.
 
 + K3S for managing workload and services.
-// In conclusion, the internship at F1Soft International  as a DevOps Engineer exposed me to various aspects of DevOps. This included knowledge gain in diverse DevOps areas like setting up CI/CD pipelines, management of bare-metal infrastructure, utilizing Kubernetes (K3s) for container orchestration, implementation of monitoring tools such as Prometheus and Grafana, and ensuring security along the CI/CD pipeline.
+*/
 
-// Practical projects were done using theoretical knowledge acquired from the program. At the end of it all, adopting different DevOps methodologies that were learnt brought about better system performance and reliability. With the help of mentors and other colleagues, my interpersonal skills were also sharpened during this successful stint henceforth having a huge positive influence on me both professionally and personally.
 
-/*
-== 4.2. Learning Outcome 
+== 4.1. Conclusion
 #v(15pt, weak: true)
+ In conclusion, the internship at F1Soft International  as a DevOps Engineer exposed me to various aspects of DevOps. This included knowledge gain in diverse DevOps areas like deployment of website with SSL/TLS certificate, Virtual Machine networking, containerization and utilizing Kubernetes (K3s) for container orchestration, implementation of monitoring tools such as Prometheus and Grafana.
+ 
+ Practical task were done using theoretical knowledge acquired from the program. At the end of it all, adopting different DevOps methodologies that were learnt brought about better system performance and reliability. With the help of mentors and other colleagues, my interpersonal skills were also sharpened during this internshipr period henceforth having a huge positive influence on me both professionally and personally.
+
+
+ 
+#v(10pt)
+== 4.2. Learning Outcome
+#v(15pt, weak: true)
+
+Here are the key areas where I gained substantial knowledge and practical experience:
+
+#set enum(numbering: "i.")
+
++ *Technical Skills* \ Developed my technical skills like operating system troubleshooting, managing bare-metal infrastructure, automating repeated tasks with bash script. Got opportunity to dig deep into using linux command line as well as monitoring tools like monit, prometheus, and grafana. Learned about monitoring various process of linux and send email alert if needed. Along with this various other tools like ansible, used for DevOps were learned. 
+
++ *Professional Development* \ Enhanced the ability to work effectively in a team-oriented environment. Problem-solving skills were improved by addressing real-world technical challenges and implementing practical solutions. Professional growth was further shaped by the mentorship and guidance received from experienced professionals.
+
+
++ *Time Management* \ Effective time management was crucial during the internship, as multiple tasks were assigned simultaneously. Work was prioritized, achievable goals were set, and deadlines were consistently met.
+
++ *Documentation* \ The importance of thorough documentation was emphasized throughout the internship. Detailed records of configurations, processes, and performance metrics were maintained, ensuring transparency and reproducibility. Comprehensive reports and documentation were compiled to communicate project progress, improving technical writing and communication skills.
+
++ *Continuous Learning* \ A habit of continuous learning was cultivated during the internship, encouraging the intern to stay updated with the latest industry trends and advancements. Self-directed learning was regularly engaged in, exploring new tools and technologies to enhance existing systems and processes
+
+
+  
+/*
+
 Throughout my internship at F1Soft International, I was exposed to a comprehensive range of DevOps practices and technologies, which significantly expanded my technical skill set and deepened my understanding of DevOps in a real-world fintech environment. Here are the key areas where I gained substantial knowledge and practical experience:
 
 #set enum(numbering: "i.")
@@ -74,7 +102,6 @@ Throughout my internship at F1Soft International, I was exposed to a comprehensi
  
  These experiences have significantly enhanced my technical skills and prepared me for future roles in the DevOps field. The comprehensive exposure to various tools, technologies, and practices has equipped me with the knowledge and confidence to tackle complex DevOps challenges and contribute effectively to any technology-driven organization.
  
-
 */
 
 #pagebreak()
