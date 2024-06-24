@@ -7,8 +7,8 @@
 #align(center, text(16pt)[
         *Tribhuvan University \
       Institute of Science and Technology \ \ 
-      Asian College of Higher Studies \
-      Ekantakuna, Lalitpur, Nepal* \ \ 
+      Bhaktapur Multiple Campus \
+      Doodhpati, Bhaktapur, Nepal* \ \ 
       
 ])
 
@@ -16,9 +16,9 @@
 #align(center, text(14pt)[
   *An Internship Report \
         On \
-  "DevOps Engineer " \ 
+  "Software Engineer" \ 
   At \ 
-  F1Soft International Pvt. Ltd.* 
+  Khalti Pvt. Ltd.* 
 ])
 
 
@@ -26,7 +26,7 @@
 #boldText[
   \
           *Submitted by \
-      #person[Saurab Tharu (T.U. Exam Roll No. 24256/076)]* \
+      #person[Anukul Adhikari (T.U. Exam Roll No. 23226/076)]* \
 ]
 ])
 

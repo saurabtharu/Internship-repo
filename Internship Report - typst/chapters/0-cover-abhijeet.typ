@@ -19,7 +19,7 @@
         On \
   "DevOps Engineer " \ 
   At \ 
-  F1Soft International Pvt. Ltd.* 
+  Khalti Pvt. Ltd.* 
 ])
 
 
@@ -27,7 +27,7 @@
 #boldText[
   \
           *Submitted by \
-      #person[Abhijeet Yadav (T.U. Exam Roll No. 24256/076)]* \
+      #person[Abhijeet Yadav (T.U. Exam Roll No. 23226/076)]* \
 ]
 ])
 
