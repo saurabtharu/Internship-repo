@@ -26,7 +26,7 @@ The following are some of the duties I was required to undertake:
 + *Documentation and Reporting*: Creating a well-detailed documentation for all processes carried out during the attachment period such configurations done thus changes made. In addition to this I was involved in generating reports on how reliable or efficient our systems were performing.
 */
 
-While working as a DevOps Engineer intern for F1Soft International, my main focus was on bringing together software development and IT operations. I had the following tasks:
+While working as a DevOps Engineer intern for Khalti, my main focus was on bringing together software development and IT operations. I had the following tasks:
 #set enum(numbering: "i)")
 
 
@@ -56,7 +56,7 @@ While working as a DevOps Engineer intern for F1Soft International, my main focu
 /*
 
 
-While working at F1Soft International as a DevOps Engineer intern, I concentrated mainly on bridging the gap between software development and IT operations. I had to work in different facets which were very crucial in this activity aimed at making certain processes are not only simplified but also automated for efficiency purposes. My primary obligation lay with creating CI/CD pipelines using Jenkins; however, my undertakings did not end there. 
+While working at Khalti Digital Wallet as a DevOps Engineer intern, I concentrated mainly on bridging the gap between software development and IT operations. I had to work in different facets which were very crucial in this activity aimed at making certain processes are not only simplified but also automated for efficiency purposes. My primary obligation lay with creating CI/CD pipelines using Jenkins; however, my undertakings did not end there. 
 
 
 

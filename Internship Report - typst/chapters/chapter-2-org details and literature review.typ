@@ -5,11 +5,11 @@
 
 == 2.1. Introduction to Organization 
 #v(15pt, weak: true)
-Khalti Digital Wallet is a leading financial technology company based in Nepal. Established in 2017, the company specializes in providing innovative digital financial solutions to a diverse range of clients, including banks, financial institutions, and enterprises in Nepal. Khalti’s mission is to revolutionize the financial services industry by leveraging cutting-edge technology to enhance financial inclusion and provide seamless digital experiences to its users. The company’s portfolio includes a wide array of products and services such as wallet itself, payment gateway, and resellable services, all designed to meet the evolving needs of the modern financial ecosystem. Khalti is recognized for youth centric mobile digital wallet in the country.
+Khalti Digital Wallet is a leading financial technology company based in Nepal. Established in 2017, the company specializes in providing innovative digital financial solutions to a diverse range of clients, including BFIs(Banks, Cooperatives, Securities) and enterprises in Nepal. Khalti’s mission is to revolutionize the financial services industry by leveraging cutting-edge technology to enhance financial inclusion and provide seamless digital experiences to its users. The company’s portfolio includes a wide array of products and services such as wallet itself, payment gateway, and resellable API services, all designed to meet the evolving needs of the Nepal's modern financial ecosystem. Khalti is recognized for youth centric mobile digital wallet in the country.
 
-The digital wallet developed by Khalti is currently used by over 10 million people. The systems contribute to nearly 30% of the total digital wallet users in Nepal. The company’s efforts in fintech innovation have been duly recognized by various national and international bodies, including the 2022 WITSA Global Innovation & Tech Excellence Awards. Khalti is also committed to financial literacy and has partnered with The Asia Foundation to provide digital and financial information to Nepali migrant workers through the Shuvayatra app. Funded by the Department for International Development (DFID), this initiative aims to equip migrant workers with the skills they need to make informed financial decisions.
+The digital wallet developed by Khalti is currently used by over 40 lakhs+ users. The systems contribute to nearly 30% of the total digital wallet users in Nepal. The company’s efforts in fintech innovation have been duly recognized by various national and international bodies, including the 2022 WITSA Global Innovation & Tech Excellence Awards. Khalti is also committed to financial literacy and has partnered with The Asia Foundation to provide digital and financial information to Nepali migrant workers through the Shuvayatra app. Funded by the Department for International Development (DFID), this initiative aims to equip migrant workers with the skills they need to make informed financial decisions.
 
-F1Soft is the market leader in the fintech industry due to its unwavering dedication to perfection, constant forward thinking and focus on the client. Financial inclusion for millions is being championed by F1Soft with its strong infrastructure and smart team that yearns to see this achieved through providing safe trustworthy easy to use financial solutions.
+Khalti is the leading player in the fintech industry due to its unwavering dedication to perfection, constant forward thinking and focus on the user base. Financial inclusion for millions is being championed by Khalti with its strong infrastructure and smart team that yearns to see this achieved through providing safe trustworthy easy to use financial solutions.
 /* 
 
 */
@@ -44,7 +44,7 @@ Khalti Digital Wallet prioritizes innovation through its structure. The Board se
 
 // #image("report_images/F1Soft Hierarchy.png")
 *#img(
-  image("report_images/organizational_structure.svg"),
+  image("report_images/Organizational Hierarchy.drawio.svg"),
     "2.1",
     "Organizational Hierarchy"
 )*
@@ -53,40 +53,25 @@ Khalti Digital Wallet prioritizes innovation through its structure. The Board se
 #v(10pt)
 == 2.3. Working Domains of Organization 
 #v(15pt, weak: true)
-Khalti Pvt. Ltd is among the top technology firms located in Nepal that mainly focuses on financial technology solutions (fintech). Since its establishment in 2004, F1Soft has revolutionized digital financial services thus changing Nepalese and regional financial sector landscape. The company operates principally in: 
+Khalti Pvt. Ltd is among the top technology firms located in Nepal that mainly focuses on financial technology solutions (fintech). Since its establishment in 2017, Khalti has revolutionized digital financial services thus changing Nepalese and regional financial sector landscape. The company operates principally in: 
 
  
 #set enum(numbering: "i)")
-+ *Digital Payment Solutions* - F1Soft is popularly known for its inclusive digital payment systems which consist of mobile wallets and payment gateways. Notable products under this category are eSewa (Nepal’s first & leading digital wallet) and Fonepay (a prominent payment gateway that facilitates secure online transactions). 
++ *Digital Wallet* - Khalti is popularly known for its digital payment wallet that offers various utilities including Topup, Bill payments, P2P, P2M fund transfers.
 
- 
++ *API Aggregation Layer* – The aggregation layers allows for diferent APIs from telecommunications and BFIs for other institutions to leverage without the infrastructure cost. 
 
-+ *Core Banking Solutions* – It offers strong core banking systems that are meant to improve the operational efficiency of banks. These solutions help in various banking operations like account management, transaction processing among others. 
++ *Payment Gateway* – Payment gateway allows for merchants to recieve transactions on the go from various differnt channels including PSO(ConnectIPS, Fonepay), mobile banking, internet banking, cards etc.
 
- 
++ *Bank Middleware* – The bank middleware allows for integration of core banking systems with the digital wallet and payment gateway for seamless transactions.
 
-+ *Mobile Banking* – Advanced mobile banking applications provided by F1Soft allow users to do multiple banking activities using their smartphones. These applications have features such as fund transfer, balance inquiry, bill payment etc., thus making it more convenient for the user. 
-
- 
-
-+ *Internet Banking* – Secure internet banking platforms provided by the company ensures that customers have a user-friendly online banking experience. This allows them to manage their finance transfer money pay bills from home comforts or while at work through different services available on these platforms. 
-
- 
-
-+ *Send or transfer money*: F1Soft also has experience with money transfer systems. They make it easy to send funds between countries by streamlining the process for their clients who want to do so quickly and securely while saving on costs too! 
-
- 
-
-+ *For businesses*: F1Soft offers many other types of technology products besides just those related to finance such as app development tools etc., through its Enterprise Solutions arm catering for all different industries’ needs ranging from software engineering through systems integration right up until consultancy service provision around Information Technology. 
-
- 
 
 #v(10pt)
 == 2.4.  Description of Intern Department
 #v(15pt, weak: true)
 During my internship at Khalti Pvt. Ltd., I was placed in the dynamic DevOps department, which plays a crucial role in the company’s IT infrastructure and operations. The DevOps team is responsible for ensuring seamless integration and deployment processes, enabling continuous delivery and integration (CI/CD) of applications. This involves managing infrastructure automation, monitoring system performance, and enhancing deployment efficiency through streamlined processes and tools. Each team within the department is led by a dedicated team lead who oversees operations and delegates responsibilities to team members. Under the guidance of System Support and Deployment Department, the department fosters a collaborative and energetic environment that enables its teams to deliver exceptional results.
 
-As a DevOps intern, I had the opportunity to work under the guidance of my mentors, Sagar Khatiwada and Avash Shakya who provided invaluable assistance throughout my tenure. My responsibilities included assisting in the setup and maintenance of CI/CD pipelines, working with tools like Docker, Kubernetes, and Ansible for infrastructure automation, and implementing monitoring tools to track system performance. Additionally, I wrote scripts to automate routine tasks, improving overall efficiency in deployment and maintenance processes. This hands-on experience in DevOps practices, coupled with the support and mentorship from my team, significantly enhanced my technical skills and prepared me for a future career in the DevOps field. The collaborative and energetic environment at F1Soft allowed me to develop professionally and contribute effectively to the team's objectives.
+As a DevOps intern, I had the opportunity to work under the guidance of my mentors, Subit Raj Pokhrel and Ashin Shakya who provided invaluable assistance throughout my tenure. My responsibilities included assisting in the setup and maintenance of CI/CD pipelines, working with tools like Docker, Kubernetes, and Ansible for infrastructure automation, and implementing monitoring tools to track system performance. Additionally, I wrote scripts to automate routine tasks, improving overall efficiency in deployment and maintenance processes. This hands-on experience in DevOps practices, coupled with the support and mentorship from my team, significantly enhanced my technical skills and prepared me for a future career in the DevOps field. The collaborative and energetic environment at F1Soft allowed me to develop professionally and contribute effectively to the team's objectives.
 
 #v(10pt)
 == 2.5.  Literature Review
