@@ -11,7 +11,7 @@ The internship taught me the true meaning of DevOps culture which is automation,
 */
 
 
-The report provides an overview of the DevOps Engineer internship at F1Soft International, where involvement included setting up and managing CI/CD pipelines, automating deployment processes, and implementing infrastructure solutions using bare-metal servers. Kubernetes (K3s) was utilized for container orchestration and application deployment along with SSL certification provisioning. Furthermore, system reliability and performance were improved through monitoring tools like Prometheus, Grafana, and Uptime Kuma within the CI/CD pipeline and infrastructure.
+The report provides an overview of the DevOps Engineer internship at Khalti Digital Wallet, where involvement included setting up and managing CI/CD pipelines, automating deployment processes, and implementing infrastructure solutions using bare-metal servers. Kubernetes (K3s) was utilized for container orchestration and application deployment along with SSL certification provisioning. Furthermore, system reliability and performance were improved through monitoring tools like Prometheus, Grafana, and Uptime Kuma within the CI/CD pipeline and infrastructure.
 
 The true meaning of DevOps culture, which encompasses automation, collaboration, and continuous learning, was taught during the internship. Collaboration with both the development team and the operations team ensured a smooth transition between development and deployment workflows. This experience has been very helpful because it has built upon previous practical knowledge of DevOps practices, thereby providing better preparation for future employment opportunities within this field.
 

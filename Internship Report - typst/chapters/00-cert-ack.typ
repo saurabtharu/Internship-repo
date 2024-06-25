@@ -22,7 +22,7 @@ Bakhundole, Lalitpur
 
 #pagebreak()
 #align(center,
-  image("../images/ACHS.png", height: 20%)
+  image("../images/TU Logo.svg", height: 20%)
 )
 
 = SUPERVISOR’S RECOMMENDATION
@@ -56,7 +56,7 @@ the evaluation.
 /**************************************************************************************/
 
 #align(center,
-  image("../images/ACHS.png", height: 20%)
+  image("../images/TU Logo.svg", height: 20%)
 )
 
 

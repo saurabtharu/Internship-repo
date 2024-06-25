@@ -5,24 +5,12 @@
 
 == 2.1. Introduction to Organization 
 #v(15pt, weak: true)
-F1Soft International is a leading financial technology company based in Nepal. Established in 2004, the company specializes in providing innovative digital financial solutions to a diverse range of clients, including banks, financial institutions, and enterprises in Nepal. F1Soft’s mission is to revolutionize the financial services industry by leveraging cutting-edge technology to enhance financial inclusion and provide seamless digital experiences to its users. The company’s portfolio includes a wide array of products and services such as mobile banking, payment gateways, digital wallets, and enterprise solutions, all designed to meet the evolving needs of the modern financial ecosystem. F1Soft is recognized for introducing mobile banking and mobile financial services in the country.
+Khalti Digital Wallet is a leading financial technology company based in Nepal. Established in 2017, the company specializes in providing innovative digital financial solutions to a diverse range of clients, including banks, financial institutions, and enterprises in Nepal. Khalti’s mission is to revolutionize the financial services industry by leveraging cutting-edge technology to enhance financial inclusion and provide seamless digital experiences to its users. The company’s portfolio includes a wide array of products and services such as wallet itself, payment gateway, and resellable services, all designed to meet the evolving needs of the modern financial ecosystem. Khalti is recognized for youth centric mobile digital wallet in the country.
 
-The Mobile Banking and Internet Banking platforms developed by F1Soft are currently used by over 90% of the banks in Nepal, serving in excess of 19 million people. The systems contribute to nearly 80% of the total digital payments in Nepal. The company’s efforts in fintech innovation have been duly recognized by various national and international bodies, including the 2014 International Business Awards (Bronze), the 2013 FNCCI Service Excellence Award, and the 2012 Red Herring Top 100 Asia Award. In 2017, F1Soft was recognized as Nepal’s Highest Tax Payer (IT Sector) by the Government of Nepal. F1Soft is also working with the Government of Nepal and a few other organizations to identify and develop digital financial solutions that benefit and improve the lives of the unbanked and underbanked across the country.
-
-
+The digital wallet developed by Khalti is currently used by over 10 million people. The systems contribute to nearly 30% of the total digital wallet users in Nepal. The company’s efforts in fintech innovation have been duly recognized by various national and international bodies, including the 2022 WITSA Global Innovation & Tech Excellence Awards. Khalti is also committed to financial literacy and has partnered with The Asia Foundation to provide digital and financial information to Nepali migrant workers through the Shuvayatra app. Funded by the Department for International Development (DFID), this initiative aims to equip migrant workers with the skills they need to make informed financial decisions.
 
 F1Soft is the market leader in the fintech industry due to its unwavering dedication to perfection, constant forward thinking and focus on the client. Financial inclusion for millions is being championed by F1Soft with its strong infrastructure and smart team that yearns to see this achieved through providing safe trustworthy easy to use financial solutions.
 /* 
-F1Soft has established itself as a pioneer in the fintech industry through its commitment to excellence, continuous innovation, and a customer-centric approach. With a robust infrastructure and a talented team, F1Soft aims to drive financial inclusion and empower millions of users by providing secure, reliable, and user-friendly financial solutions.
-
-
-
-F1Soft International leading financial technology company Nepal. Established 2004, it focuses on providing advanced digital financial solutions to various customers such as banks, financial institutions, and businesses within the country. F1Soft aims at changing the banking sector by using modern technology to promote financial inclusion and offer seamless online services for its clients. Its products range from mobile banking systems, payment gateways, digital wallets and enterprise solutions all designed around the needs of today’s financial world. Besides, this firm is credited with introducing mobile banking as well as mobile financial services in Nepal.
-
-The company’s mobile banking and internet banking platforms which were developed are used by more than 90% of banks currently operational in Nepal thus serving >19M people. These systems account for nearly 80% total digital payments recorded so far in this landlocked nation. Moreover, F1Soft has won different accolades in recognition of its contribution towards fintech innovation both locally and internationally including but not limited to: Bronze Stevie Award Winner 2014 International Business Awards; 2013 FNCCI Service Excellence Award Winner; 3rd – Red Herring Top 100 Asia Award Winner 2012 among others. Additionally, in 2017 it was awarded ‘Nepal Highest Tax Payer IT Sector’ by Government of Nepal Revenue Department. Furthermore, there is an ongoing collaboration between F1Soft International Pvt Ltd and Government of Nepal/other agencies aimed at identifying and developing digital financial solutions that will benefit unbanked or underbanked populations across different regions of Nepal.
-
-
-F1Soft is the market leader in the fintech industry due to its unwavering dedication to perfection, constant forward thinking and focus on the client. Financial inclusion for millions is being championed by F1Soft with its strong infrastructure and smart team that yearns to see this achieved through providing safe trustworthy easy to use financial solutions.
 
 */
 *#tbl(
@@ -34,15 +22,15 @@ F1Soft is the market leader in the fintech industry due to its unwavering dedica
     columns: (0.3fr, 0.4fr ),
     inset: (x:5pt, y: 10pt),
     align: horizon,
-    [Official name], [F1Soft ],
+    [Official name], [Khalti Digital Wallet ],
     [Type of business], [Fintech],
-    [Location], [Pulchowk, lalitpur],
-    [Year of establishment], [2004],
-    [Key service areas], [Digital Payment Solutions, Banking Solutions],
-    [Staff size], [600],
+    [Location], [Bakhundole, lalitpur],
+    [Year of establishment], [2017],
+    [Key service areas], [Digital Payment Solutions],
+    [Staff size], [300],
     [Location of clients], [Nepal],
-    [Expertise in],[Financial Software Development, Digital Payment Systems, Data Analytics],
-    [Noteworthy mentions],[Innovation in Digital Payments,Core Banking Solutions],
+    [Expertise in],[Financial Software Development, Digital Payment Systems],
+    [Noteworthy mentions],[Innovation in Digital Payments, Core Banking Solutions],
 )
 
 
@@ -51,12 +39,12 @@ F1Soft is the market leader in the fintech industry due to its unwavering dedica
 == 2.2. Organizational Hierarchy 
 #v(15pt, weak: true)
 
-F1Soft International prioritizes innovation through its structure. The Board sets direction, and Executive Management implements it. Specialized departments handle tasks: Product Development builds software, Sales & Marketing drives growth, Customer Support keeps users happy, DevOps streamlines processes, and Finance & Admin manages the company's well-being. This structure fosters collaboration towards F1Soft's goals.
+Khalti Digital Wallet prioritizes innovation through its structure. The Board sets direction, and Executive Management implements it. Specialized departments handle tasks: Product Development builds software, Sales & Marketing drives growth, Customer Support keeps users happy, DevOps streamlines processes, and Finance & Admin manages the company's well-being. This structure fosters collaboration towards Khalti's goals.
 
 
 // #image("report_images/F1Soft Hierarchy.png")
 *#img(
-  image("report_images/F1Soft Hierarchy.png"),
+  image("report_images/organizational_structure.svg"),
     "2.1",
     "Organizational Hierarchy"
 )*

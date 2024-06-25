@@ -39,7 +39,7 @@ Not just practical experience, but also the critical role of DevOps to bridge th
 
 == 1.1. Introduction
 #v(15pt, weak: true)
-Over the course of my DevOps internship at F1Soft International, the chance was given to fully embrace the DevOps culture and observe how it has been used effectively to bridge the gap between software development and IT operations. F1Soft International is one of the most well-known names in innovative financial solutions, offering a wide array of innovative and advanced solutions to commercial banks, development banks, financial institutions, and several other large enterprises. The company is committed to using advanced technology with the view of enhancing financial inclusion and making digital experience seamless.The primary responsibility, as a member of the DevOps team, has been to learn how to streamline and enhance the development and operational processes, so that the resulting systems could be robust, efficient, and reliable.
+Over the course of my DevOps internship at Khalti Digital Wallet, the chance was given to fully embrace the DevOps culture and observe how it has been used effectively to bridge the gap between software development and IT operations. Khalti Digital Wallet is one of the well-known names in innovative financial solutions, offering a wide array of innovative and advanced solutions to commercial banks, development banks, financial institutions, and several other large enterprises. The company is committed to using advanced technology with the view of enhancing financial inclusion and making digital experience seamless.The primary responsibility, as a member of the DevOps team, has been to learn how to streamline and enhance the development and operational processes, so that the resulting systems could be robust, efficient, and reliable.
 
 The main duty included understanding the implementation of DevOps practices to automate and simplify different parts of the software delivery process. This entailed creation as well as optimization of Continuous Integration/Continuous Deployment (CI/CD) pipelines which automate integration of code changes frequently and reliably should be deployed; they are important in reducing time-to-market while increasing overall development team's productivity. 
 
@@ -47,7 +47,7 @@ Additionally, there was an opportunity was given to observe how corporations uti
 
 // This paper serves as a documentation of my internship experience showing what projects I worked on, where difficulties arose and how they were solved. It also indicates the skills gained and knowledge acquired which contributed immensely to shaping me into becoming an expert DevOps professional.
 
-Real-world experience with DevOps, complementing the theoretical knowledge I previously acquired, has been one of the best outcomes of this internship. A better understanding of the collaborative and iterative nature of DevOps was also achieved. F1Soft has been able to produce quality software faster by focusing on continuous improvement, automation, and ensuring effective communication between development and operations teams. These skills and ideas will help in handling future challenges in this area, thereby contributing to becoming an even better engineer.
+Real-world experience with DevOps, complementing the theoretical knowledge I previously acquired, has been one of the best outcomes of this internship. A better understanding of the collaborative and iterative nature of DevOps was also achieved. Khalti has been able to produce quality software faster by focusing on continuous improvement, automation, and ensuring effective communication between development and operations teams. These skills and ideas will help in handling future challenges in this area, thereby contributing to becoming an even better engineer.
 
 
 
@@ -56,7 +56,7 @@ Real-world experience with DevOps, complementing the theoretical knowledge I pre
 == 1.2. Problem Statement
 #v(15pt, weak: true)
 
-F1Soft International, like many tech-driven organizations, faced challenges related to the manual processes in software deployment, the scalability of their infrastructure, and the efficiency of their operational workflows. The primary issues included:
+Khalti Digital Wallet, like many tech-driven organizations, faced challenges related to the manual processes in software deployment, the scalability of their infrastructure, and the efficiency of their operational workflows. The primary issues included:
 
 #set enum(numbering: "i)")
 + *Manual Deployment Processes*: \ The existing deployment processes were largely manual, leading to inconsistencies, longer deployment times, and higher risk of errors.
@@ -65,14 +65,14 @@ F1Soft International, like many tech-driven organizations, faced challenges rela
 
 + *Operational Efficiency*: \ The lack of automated workflows resulted in slower response times to incidents and less efficient use of resources.
 
-Addressing these problems was crucial for maintaining F1Soft’s competitive edge, ensuring customer satisfaction, and supporting the company’s growth objectives.
+Addressing these problems was crucial for maintaining Khalti’s competitive edge, ensuring customer satisfaction, and supporting the company’s growth objectives.
 
 
   
 #v(10pt)
 == 1.3. Objectives
 #v(15pt, weak: true)
- The primary objectives of my internship at F1Soft International were:
+ The primary objectives of my internship at Khalti Digltal Wallet were:
 #set enum(numbering: "i)")
 
 
@@ -122,11 +122,11 @@ Despite the comprehensive scope, there were some limitations during my internshi
 == 1.5. Report Organization
 #v(15pt, weak: true)
 
-This report is structured into four main chapters, each detailing different aspects of my internship experience at F1Soft International. Here is a brief overview of each chapter:
+This report is structured into four main chapters, each detailing different aspects of my internship experience at Khalti Digital Wallet. Here is a brief overview of each chapter:
 
 + *Chapter 1: Introduction* \ This chapter introduces the work completed during my internship. It outlines the problem statement, the objectives of the internship, the scope and limitations of the project, and provides an overview of the report’s organization.
 
-+ *Chapter 2: Organization Details and Literature Review* \ In this chapter, a comprehensive introduction to F1Soft International has been provided. This includes an overview of the organization, its hierarchy, the various domains in which it operates, and a detailed description of the department where internship has been completed. Additionally, this chapter includes a literature review or related study, highlighting relevant theories and frameworks that underpin the works that have been performed during the internship.
++ *Chapter 2: Organization Details and Literature Review* \ In this chapter, a comprehensive introduction to Khalti Digital Wallet has been provided. This includes an overview of the organization, its hierarchy, the various domains in which it operates, and a detailed description of the department where internship has been completed. Additionally, this chapter includes a literature review or related study, highlighting relevant theories and frameworks that underpin the works that have been performed during the internship.
 
 + *Chapter 3: Internship Activities* \ This chapter delves into the specifics of my internship activities. It outlines my roles and responsibilities, provides a weekly log of the technical activities, describes the involved projects, and details the technical tasks and activities have been completed successfully. This section offers an in-depth look at the hands-on experience obtained.
 
