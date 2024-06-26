@@ -68,18 +68,44 @@ Khalti Pvt. Ltd is among the top technology firms located in Nepal that mainly f
 
 #v(10pt)
 == 2.4.  Description of Intern Department
+=== 2.4.1 Placement
 #v(15pt, weak: true)
-
+#text(12pt)[
 The Backend Development team plays a critical role in building and maintaining the core functionalities of the Khalti digital wallet application. The team is responsible for developing robust and scalable APIs using frameworks like Django and Django REST to deliver a seamless user experience. This involves designing, implementing, and testing backend logic, ensuring data integrity, and collaborating with other teams to deliver features on schedule.
 as a Backend Python Developer intern, had the opportunity to work under the guidance of experienced developers at Khalti. This internship provided valuable hands-on experience in building and maintaining a secure backend for a financial application. Responsibilities included:
 
 #set enum(numbering: "i)")
 + Contributing to the development of the Khalti digital wallet using Django and Django REST framework.
-+ Designing and implementing APIs for functionalities like the newly developed payment scheduling feature.
++ Designing and implementing APIs for functionalities like add/edit email feature.
 + Collaborating with other developers to ensure code quality, maintainability, and adherence to best practices.
 + Writing unit tests to ensure the reliability and robustness of the backend code.
 
 This internship at Khalti fostered my technical skills in Python programming and Django framework expertise. It also provided valuable insight into the software development lifecycle within a fast-paced fintech environment.
+]
+\
+=== 2.4.2 Duration
+#v(15pt, weak: true)
+#text(12pt)[
+The duration and relevant details of internship are as follows:
+*#tbl(
+  [],
+  "2.2",
+  [Duration of Internship],
+)*
+#table(
+    columns: (0.1fr, 0.1fr ),
+    inset: (x:5pt, y: 5pt),
+    align: horizon,
+    [Start Date], [April 08, 2024],
+    [End Date], [ June 07, 2024],
+    [Duration],[2 months],
+    [Office hours],[9:30am -6:30pm]
+
+  )
+]
+  \
+
+
 #v(10pt)
 == 2.5.  Literature Review
 #v(15pt, weak: true)

@@ -39,67 +39,66 @@ Following table shows the weekly activities the intern performed throughout thei
     align: horizon,
     [Week], [Activities],
     [ Week 1], [
-      - Orientation
-      - Installed CentOS with automatic as well as manual partition and got familiar with Linux commands
-      - Learned hosting HTML, CSS on nginx and tomcat webserver
-      - Setup nginx for reverse proxy and load balancing
-      
+    - Introduced to the team and company culture.
+    - Setup of personal development environment and necessary software.
+    - Overview of the digital wallet codebase with a senior developer.
+    - Attended workshops on Python and Django, the core technologies used.
     ],
     
     [ Week 2], [
-      - Explored about HAProxy for load balancing
-      - Configured firewalld in CentOS for allowing traffic
-      - Got familiar with SELinux policies 
-      - Hosted tomcat website with Dockerfile
-      - Learned basic commands used in redis for retrieving and inserting data  
-      - Configured keepalived for loadbalancing and high-availability
-      - Configured self hosted git server without GUI
-      - Configured nginx hosted website with SSL certificate 
+     - Studied existing email functionalities within the digital wallet.
+     - Reviewed documentation of related backend processes.
+     - Participated in daily stand-ups to discuss ongoing projects.
+     - Learned about security protocols relevant to user data handling.
     ],
 
     
     [ Week 3], [
-      - Learned to create own Certificate Autority and generate SSL certificate for client
-      - Setup mysql database
-      - Installed and configured MinIO for managing unstructured object data
-      - Installed monit for process monitoring and configured to send alert email
-      - Hosted git service like github, gitlab
-      - Configured uptime-kuma for monitoring services over HTTP/S, TCP, DNS and other protocols
-      - Learned to create bash script for send email using curl
-      - Achieved file synchronization between master with worker nodes using lsyncd
-      - Learned about Network File System for sharing files between nodes within a network
-      - Learned about traefik for reverse proxy and load balancing      
+     - Began coding the email update feature in the user profile section.
+     - Implemented backend logic for sending verification emails.
+     - Set up database migrations to handle new email data securely.
+     - Developed error handling routines for failed email updates.
     ],
 
     
     [ Week 4], [
-      - Configured MySQL replication for data backup
-      - Setup self-hosted registry for docker images i.e. Harbor
-      - Configured jenkins to push to the self-hosted registry
-      - Learned to create ansible playbooks
-      - Configured grafana, loki and prometheus for log collection and their visualization
-      - Studies about cryptography and PKI
-      - Setup k3s with rancher to manage kubernetes cluster
+     - Began coding the email update feature in the user profile section.
+     - Implemented backend logic for sending verification emails.
+     - Set up database migrations to handle new email data securely.
+     - Developed error handling routines for failed email updates.
     ],
+
+
     [ Week 5], [
-      - Deploy website in nginx using k3s pod
-      - Learned about kubernetes concepts
-      - Deployed sidecar contanier in k3s
-      - Learned to manage LVM partition of linux system
-      - Deployed a website synchronized with git repo
-      - Learned about awk and sed command 
-  
+     - Integrated the new email functionality with the frontend interface.
+     - Conducted preliminary testing with dummy data to ensure stability.
+     - Identified bugs and issues in the initial deployment.
+     - Refined the API responses for better user feedback on errors.
     ],
+
+
     [ Week 6], [
-      - Configured k3s deployed website with SSL certificate using k3s TLS Secrets
-      - Learned about ArgoCD for continuous delivery
+     - Submitted code for peer review and incorporated feedback.
+     - Optimized database queries for faster email updates.
+     - Enhanced security measures based on latest best practices.
+     - Wrote comprehensive unit tests for the new features.
     ],
-    // [ Week 7], [],
-    // [ Week 8], [],
-    // [ Week 9], [],
-    // [ Week 10], [],
-    // [ Week 11], [],
-    // [ Week 12], [],
+
+
+    [ Week 7], [
+
+     - Deployed the feature in a controlled test environment.
+     - Monitored user interactions and collected feedback from test users.
+     - Updated project documentation to include new features and changes.
+     - Prepared a rollback plan for potential deployment issues.
+    ],
+    [ Week 8], [
+
+     - Made final adjustments based on user feedback and testing results.
+     - Conducted a final review with the project team and stakeholders.
+     - Officially launched the email change feature to production.
+     - Completed a detailed handover to the maintenance team, ensuring they are equipped to manage and troubleshoot the feature.
+    ],
 )
 
 
@@ -111,40 +110,113 @@ Following table shows the weekly activities the intern performed throughout thei
 #v(10pt)
 == 3.3. Description of the Project(s) Involved During Internship 
 #v(15pt, weak: true)
-One of the highlights which really helped me in understanding DevOps principles was working on two minor projects during my internship both using local infrastructure. 
+One of the highlights which really helped me in understanding whole software development process was working on two minor projects during my internship both using django and django rest framework. 
 
-*Project 1: Setting up Jenkins and Self-Hosted Docker Registry *
+=== 3.3.1. Allow users to securely edit/change email address
 
-In this project, my main goal was to automate the build and deployment processes by using Jenkins as well as a self-hosted docker registry.
+In this project, my main goal was to streamline the process of editing/verifying email address focusing on ease of use and security in mind.
 
-+ *Under Jenkins Configuration*: I installed Jenkins on a local server then did its setup for managing CI/CD pipelines which were continuous integration and continuous deployment. This involved creating Jenkins jobs that would automate building and testing phases of application development.
++ The project is done using Django, Django Rest Framework, Django Templates, and Celery.
++ The project involved creating a new API endpoint for users to change their email address.
++ The project also involved creating a Celery task to send an email verification link to the new email address.
++ The system was designed to ensure that the email change process was secure and user-friendly.
 
-+ *Setting Up Self-Hosted Docker Registry*: I established an internal docker registry within a server environment so that we could host our docker images locally instead of relying on external registries where we have less control over them or their security levels.
+==== 3.3.1.1 Functional Requirement
+The functional requirements for a system describe what the system should do. Those requirements depend on the kind of software being developed and the expected software users. These are statements of services the system should provide, how the system should react to particular inputs, and how the system should behave in specific situations. 
 
-+ *Image Push To Registry*: Thereafter, I configured jenkins pipelines; these would pull source codes from different repositories then build corresponding docker images before pushing these artifacts into my own registry which I had set up before hand thus ensuring all necessary files for deployment are stored in one place for both security
+*#img(
+  image("report_images/internship_usecase.drawio.svg"),
+    "3.1",
+    "Organizational Hierarchy"
+)*
+
+The Figure 3.1 represents a consumer and system interaction that shows the basic working features of the application itself, where the user can change their email address and verify it.
+
+*Use Case Description*
+#table(
+  columns: 8,
+  table.header(
+  [Use Case ID], [User Case Name], [Actor], [Description], [Preconditions], [Main Flow], [Alternative Flow], [Postconditions]),
+  [UC01], [View Profile], [Consumer], [Users can view additional options in their profile.], [User is logged into the Khalti App and is in the Profile section.], [1. User accesses profile.<br>2. User views 3 dots for more options.], [None], [User sees 3 dots.],
+
+  [UC02], [Add Email], [Consumer], [Allows the user to add an email address to their profile.], [User is in the Profile section of the Khalti App.], [1. User clicks on 3 dots.<br>2. User selects "Add Email".<br>3. User enters email and submits for authentication.],
+  [1. Invalid email format.<br>2. Email linked to another account.], [Email is added pending verification.],
+
+  [UC03], [Authenticate Email Addition], [Consumer], [Handles authentication required for adding an email.], [User has entered a valid email address.], [1. User is prompted for authentication.<br>2. User completes authentication.], [1. Biometric fails, try password.<br>2. Incorrect password input.], [Email is authenticated, verification link sent.],
+
+  [UC04], [Update Email], [Consumer], [Allows the user to change their email address.], [User has previously added an email.], [1. User accesses "Update Email" from profile.<br>2. User enters new email and authenticates.], [Same as Add Email use case.], [Email update process initiated.],
+
+  [UC05], [Handle Authentication Failures], [Consumer], [Manages repeated authentication failures.], [User has failed authentication attempts.], [User attempts to authenticate and fails.], [User fails multiple times leading to lock-out.], [User is temporarily locked out after specified failures.],
+
+  [UC06], [Handle Expired Verification Link], [Consumer], [Manages scenarios where a user clicks an expired verification link.], [User has received a verification link.], [User clicks expired verification link.], [None], [User is directed to a webpage to request a new link.],
+
+  [UC07], [Resend Verification Email], [Consumer], [Allows users to resend the verification email if not received.], [User has not received the initial verification email.], [User selects the option to resend verification email.], [None], [Verification email is resent.],
+
+  [UC08], [Handle Network Issues During Email Submission], [Consumer], [Manages scenarios with network connectivity issues during email submission.], [User is adding an email.], [User faces network issues during the submission.], [None], [Error message is displayed, advises checking network.]
+)
+==== 3.3.1.2 Non-Functional Requirement
+Non-functional requirements are requirements that are not directly concerned with the specified function delivered by the system.
+
+#set enum(numbering: "i)")
+
+- *Maintainability*: \ Adhere to coding standards that promote readability and maintainability.
+- *Compliance*: \ Ensure the system complies with relevant data protection regulations (like GDPR, if applicable) regarding user data.
 
 
-The result was a complete automation of CI/CD pipeline which eliminated manual intervention, reduced errors and made deployment faster within our premises.
+==== 3.3.1.3 Feasibility Study
+Before starting the project, a feasibility study is carried out to measure the system's viability. A feasibility study is necessary to determine if creating a new or improved system is friendly with the cost, benefits, operation, technology, and time. The following are the feasibility concerns in this project:
 
-*Project 2: Using git-sync with Nginx Deployed In K3S*
+#set enum(numbering: "i)")
++ *Technical Feasibility*: \ 
+The technical feasibility of enhancing the email edit/update feature in a Django-based system considers both the current technological framework and specific security requirements essential in the financial sector. Given that Django is robust in managing secure user interactions and database modifications (necessary for updating email addresses), the existing infrastructure is likely sufficient. However, due to the sensitive nature of financial data, the security implementations need to be rigorously evaluated. This includes ensuring encryption for data transmissions and safeguarding against vulnerabilities specific to financial applications, such as phishing and session hijacking. 
 
-During this project work centered around syncing websites hosted on self hosted git services (Gitea/Gogs) with nginx servers deployed inside K3s clusters as well adding SSL certificates deployment along side Mysql replication also .
++ *Operational Feasibility*: \ From an operational feasibility standpoint, integrating this feature into Khalti's digital wallet platform is seamless and minimally disruptive to existing operations. Since digital wallets require high reliability and user trust, any changes that involve user account details, like email addresses, must be handled with extreme caution to avoid eroding trust or introducing errors. The introduction of the feature should be accompanied by comprehensive user documentation and possibly a brief tutorial within the app to facilitate adoption. Additionally, since this feature is fundamental to account security, ensure that your customer support team is well-prepared to address any issues that arise quickly and effectively. This might involve specialized training and updating internal operational protocols.
 
-+ *Git-sync Implementation*: Configured git-sync within the local K3s environment to automatically pull the latest changes from the Git repository (hosted on a local Gitea or Gogs instance). This ensured that the website content was always up-to-date with the latest code changes.
-
-+ *Nginx Deployment*: Deployed Nginx as a reverse proxy in the local K3s cluster to serve the website. Configured Nginx to serve the synchronized content from the Git repository.
-
-+ *SSL Certificates*: Utilized Kubernetes Ingress with TLS secrets to implement SSL certificates for secure HTTPS access to the website. This was done using Let's Encrypt to automatically issue and renew certificates.
-
-// + *MySQL Replication*: Set up MySQL replication  locally to synchronize the data of Gitea across different nodes, ensuring high availability and fault tolerance of the version control data.
-
-+ *Monitoring and Logging*: Implemented monitoring and logging solutions using Grafana, Prometheus, and Loki. These tools were configured to monitor the performance and health of the applications, collect logs, and visualize metrics, enabling proactive management and troubleshooting of the deployed applications.
-
-The project demonstrated a robust, automated deployment process with real-time synchronization, secure access, and reliable data replication, all managed within the local infrastructure.
-
-These projects provided hands-on experience with several key DevOps tools and practices, such as Jenkins, Docker, K3s, git-sync, Nginx, SSL certificates. The practical knowledge gained from these projects significantly enhanced my skills in automating, managing, and securing deployments in a production environment, all within the scope of local infrastructure.
++ *Economic Feasibility*: \ The economic feasibility for Khalti involves a detailed analysis of costs versus anticipated benefits. The direct costs include development, testing, additional security measures, and training. Operationally, the feature should lead to a reduction in support costs, as users can self-manage their email details, potentially lowering the volume of support requests related to account access issues. From a benefits perspective, enhancing user autonomy and security can improve customer satisfaction and retention—a crucial metric in the competitive fintech space. Calculating the return on investment should factor in these indirect benefits, such as enhanced user trust and reduced risk of security breaches, which can have significant financial implications. As a fintech entity, projecting the feature’s impact on enhancing regulatory compliance and reducing fraud incidents could further justify the investment.
 
 
+==== 3.3.1.4 System Design
+System design defines the components, modules, interfaces, and data for a system to satisfy specified requirements. It can also be defined as creating or altering systems and the processes, practices, models, and methodologies used to develop them. The main objective of the detailed system design is to prepare a system blueprint that meets the goals of the conceptual system design requirements. The system designs for building this project include database schema, input-output design, class diagram, sequence diagram, and activity diagram.
+
+==== 3.3.1.4 Architectural Design
+The architectural design shows the architecture of the overall system. The system is based on MVC architecture.
+*#img(
+  image("report_images/mvc.png"),
+    "3.2",
+    "Architectural Design of the System"
+)*
+
+==== 3.3.1.5 Database Design
+The following database schema is the general structure used in the application.
+*#img(
+  image("report_images/edit_email_database.png"),
+    "3.3",
+    "Table of User Model"
+)*
+
+==== 3.3.1.6 Class Diagram
+The class diagram describes the relationships and source code dependencies among other classes.
+*#img(
+  image("report_images/edit_email_class.svg"),
+    "3.3",
+    "Class Diagram of User Model"
+)*
+The Figure 3.3 illustrates the class diagram of the system. There is only one class, User, which is responsible for handling user data and operations on itself.
+
+
+==== 3.3.1.7 Sequence Diagram
+A sequence diagram is an interaction diagram because it describes how and in what order a group of objects works together. Sequence diagrams are sometimes known as event diagrams. The sequence diagram of the system is shown below.
+*#img(
+  image("report_images/edit_email_sequence.svg"),
+    "3.3",
+    "Class Diagram of User Model"
+)*
+The Figure 3.3 illustrates how the frontend system will interact with the backend api to change the email address of the user.
+
+
+
+
+#pagebreak()
 #v(10pt)
 == 3.4. Tasks / Activities Performed 
 #v(15pt, weak: true)
