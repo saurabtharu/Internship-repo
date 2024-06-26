@@ -41,7 +41,7 @@ Not just practical experience, but also the critical role of DevOps to bridge th
 #v(15pt, weak: true)
 Over the course of my Backend Python Developer Internship at Khalti Digital Wallet, the chance was given to fully embrace the software development culture and observe how it has been used effectively to deliver software to the masses. Khalti Digital Wallet is one of the well-known names in innovative financial solutions, offering a wide array of innovative and advanced solutions to commercial banks, development banks, financial institutions, and several other large enterprises. The company is committed to using advanced technology with the view of enhancing financial inclusion and making digital experience seamless.The primary responsibility, as a member of the backend team, has been to learn how to streamline and enhance the development and operational processes, so that the resulting systems could be robust, efficient, and reliable.
 
-The main duty included understanding and implementation of software practices simplify different parts of the software development process. This entailed creation as well as optimization of various software systems while increasing overall team's productivity. 
+The main duty included understanding and implementation of software practices, simplify different parts of the software development process. This entailed creation as well as optimization of various software systems while increasing overall team's productivity. 
 
 Additionally, there was an opportunity given to observe how corporations utilize various scheduling services for handling asynchronous tasks in their environments. Scheduling services/payments not only saves time but also reduces human error which is crucial in online payment, thereby increasing reliability and yielding consistent results. Practical experience was gained in routine operations, implementing robust codebase, managing production seamlessly deployed across different systems or platforms.
 
@@ -53,15 +53,9 @@ Real-world experience with Software Development, complementing the theoretical k
 #v(10pt)
 == 1.2. Problem Statement
 #v(15pt, weak: true)
+In the rapidly evolving fintech industry, efficient and timely management of payments is a critical factor for enhancing user satisfaction and operational reliability. Prior to the introduction of a payment scheduling feature, users of Khalti faced limitations in managing their financial transactions effectively. They were required to manually initiate each payment at the specific time they desired the transaction to occur. This method was not only time-consuming but also prone to human error, potentially leading to missed payments or financial discrepancies. Furthermore, the lack of an automated payment scheduling system placed unnecessary constraints on users who needed to manage recurring payments or transactions during inconvenient hours, ultimately impacting user engagement and satisfaction.
 
-Khalti Digital Wallet, like many tech-driven organizations, faced challenges related to the manual processes in software deployment, the scalability of their infrastructure, and the efficiency of their operational workflows. The primary issues included:
-
-#set enum(numbering: "i)")
-+ *Manual Deployment Processes*: \ The existing deployment processes were largely manual, leading to inconsistencies, longer deployment times, and higher risk of errors.
-
-+ *Infrastructure Scalability*: \ With a growing user base, the need for scalable infrastructure became critical. The current setup struggled to efficiently handle the increased load, affecting performance and user experience.
-
-+ *Operational Efficiency*: \ The lack of automated workflows resulted in slower response times to incidents and less efficient use of resources.
+To address these challenges, the company aimed to integrate a robust payment scheduling feature that allows users to automate their transactions. The goal was to enable precise, reliable, and secure management of scheduled payments, thereby enhancing the overall user experience, increasing the functionality of the digital wallet, and maintaining the platform's competitive edge in the fintech market. This feature was to be implemented using Django for the backend development and Celery for managing background tasks, ensuring that payments are processed at the scheduled times without requiring user interaction at the point of transaction.
 
 Addressing these problems was crucial for maintaining Khalti’s competitive edge, ensuring customer satisfaction, and supporting the company’s growth objectives.
 
@@ -78,9 +72,9 @@ Addressing these problems was crucial for maintaining Khalti’s competitive edg
 
 + *Develop Problem-Solving Skills*: \ Tackle real-world challenges and develop solutions, enhancing critical thinking and problem-solving abilities.
 
-+ *Automate Deployment Processes*: \ Implement CI/CD pipelines to automate the build, test, and deployment processes, reducing deployment time and errors.
++ *Software Deployment Processes*: \ Implement various steps of software development life cycle, to gain hands-on experience developing scalable backend application.
 
-+ *Improve Operational Efficiency*: \ Develop and integrate automated monitoring and alerting systems to enhance incident response times and operational efficiency.
++ *Collaboration with Senior Developers*: \ To collaborate with senior developers and learn best practices in coding and project management.
 
 
 #v(10pt)
@@ -91,13 +85,13 @@ Addressing these problems was crucial for maintaining Khalti’s competitive edg
 *1.4.1. Scope* \
 The scope of my internship included the following key areas:
 
-+ *CI/CD Pipeline Implementation*: \ Setting up automated pipelines for continuous integration and deployment on bare-metal servers.
++ *Backend Development Contribution*: \ Django and Django REST frameworks used to construct APIs for the digital wallet, including a payment scheduling feature with functionalities for scheduling, rescheduling, and automatic execution.
 
-+ *Bare-Metal Infrastructure Management*: \ Designing and deploying scalable solutions using physical servers.
++ *Agile Development Participation*: \ Involvement in the software development lifecycle, potentially encompassing sprints, code reviews, and collaboration with mentors and teams to deliver the payment scheduling feature.
 
-+ *Monitoring and Alerting*: \ Implementing tools like Prometheus and Grafana for monitoring and setting up alerting mechanisms.
++ *Mentorship and Knowledge Acquisition*: \ Guidance from experienced developers, understanding of secure backend development for financial applications and best practices within the software development lifecycle. 
 
-+ *Security Enhancements*: \ Adding security checks within the CI/CD pipeline and ensuring infrastructure compliance with security standards.
++ *Technical Skill Development*: \ Enhancement of python programming skills and expertise in the Django framework. Expanding knowledge of financial regulations while addressing challenges and proposing codebase improvements.
 
 
 
@@ -105,13 +99,13 @@ The scope of my internship included the following key areas:
 *1.4.2. Limitations* \
 Despite the comprehensive scope, there were some limitations during my internship:
 
-+ *Time Constraints*: \ The duration of the internship was limited, which restricted the depth of exploration and implementation of certain advanced DevOps practices and tools.
++ *Limited Project Scope*: \ The internship focused primarily on the development of a single feature (payment scheduling) within the digital wallet, potentially limiting exposure to the broader functionalities of the application.
 
-+ *Resource Availability*: \ Access to certain hardware and software resources was limited, which occasionally hindered the implementation and testing of specific solutions on a larger scale.
++ *Intern-Level Responsibilities*: \ Tasks were assigned with an intern's experience level in mind, potentially offering less opportunity to work on complex backend functionalities or core system architecture.
 
-+ *Learning Curve*: \ The complexity of some tools and technologies, especially those I was unfamiliar with, required significant time to learn, reducing the time available for hands-on application.
++ *Focus on Specific Technologies*: \ The internship primarily used Django and Django REST framework, potentially limiting exposure to a wider range of technologies and frameworks used in the industry.
 
-+ *Assigned Task Scope*: \ The tasks assigned were predetermined, leaving limited room to explore additional areas of personal or emerging interest within the DevOps field.
++ *Time Constraints*: \ The internship's timeframe may have restricted the ability to delve deeper into specific technical aspects or explore alternative approaches to the payment scheduling feature.
 
 
 
