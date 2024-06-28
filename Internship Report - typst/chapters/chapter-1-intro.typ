@@ -43,7 +43,7 @@ Over the course of my Backend Python Developer Internship at Khalti Digital Wall
 
 The main duty included understanding and implementation of software practices, simplify different parts of the software development process. This entailed creation as well as optimization of various software systems while increasing overall team's productivity. 
 
-Additionally, there was an opportunity given to observe how corporations utilize various scheduling services for handling asynchronous tasks in their environments. Scheduling services/payments not only saves time but also reduces human error which is crucial in online payment, thereby increasing reliability and yielding consistent results. Practical experience was gained in routine operations, implementing robust codebase, managing production seamlessly deployed across different systems or platforms.
+Additionally, there was an opportunity given to observe how consumers utilize various features and services of a large digital wallet platform. The users were facing difficulty and also in the customer facing department there was lots of issue regarding  the email address and verification, thus i led the email change/verification system feature. 
 
 Real-world experience with Software Development, complementing the theoretical knowledge I previously acquired, has been one of the best outcomes of this internship. A better understanding of the collaborative and iterative nature of software development was also achieved. Khalti has been able to produce quality software faster by focusing on continuous improvement, optimization, and ensuring effective communication between development and operations teams. These skills and ideas will help in handling future challenges in this area, thereby contributing to becoming an even better software engineer.
 
@@ -53,9 +53,9 @@ Real-world experience with Software Development, complementing the theoretical k
 #v(10pt)
 == 1.2. Problem Statement
 #v(15pt, weak: true)
-In the rapidly evolving fintech industry, efficient and timely management of payments is a critical factor for enhancing user satisfaction and operational reliability. Prior to the introduction of a payment scheduling feature, users of Khalti faced limitations in managing their financial transactions effectively. They were required to manually initiate each payment at the specific time they desired the transaction to occur. This method was not only time-consuming but also prone to human error, potentially leading to missed payments or financial discrepancies. Furthermore, the lack of an automated payment scheduling system placed unnecessary constraints on users who needed to manage recurring payments or transactions during inconvenient hours, ultimately impacting user engagement and satisfaction.
+In the development of a digital wallet application at a fintech company, a robust and secure email verification system was required to enhance user account security and ensure the validity of email addresses used for communication. The system needed to address two primary scenarios: the verification of a new user's email address upon signup and the updating of an already verified email address. In both scenarios, it was crucial to ensure that the email verification process was secure, reliable, and user-friendly, preventing unauthorized access and ensuring that only verified email addresses were used within the system.
 
-To address these challenges, the company aimed to integrate a robust payment scheduling feature that allows users to automate their transactions. The goal was to enable precise, reliable, and secure management of scheduled payments, thereby enhancing the overall user experience, increasing the functionality of the digital wallet, and maintaining the platform's competitive edge in the fintech market. This feature was to be implemented using Django for the backend development and Celery for managing background tasks, ensuring that payments are processed at the scheduled times without requiring user interaction at the point of transaction.
+To achieve this, a feature was developed using Django and Django REST framework for the backend, with Celery employed to send emails asynchronously. The feature involved storing the user's email in the database with an is_email_verified flag set to false upon signup and sending a one-time link to the user's email for verification. For users updating their verified email addresses, a two-step verification process was implemented, where a one-time link was first sent to the old email address and, upon clicking, another one-time link was sent to the new email address. The system ensured that both links were clicked for the email change to be completed and verified. Extensive testing, including unit and integration tests, was conducted to ensure the implementation's effectiveness and reliability.
 
 Addressing these problems was crucial for maintaining Khalti’s competitive edge, ensuring customer satisfaction, and supporting the company’s growth objectives.
 
@@ -99,7 +99,7 @@ The scope of my internship included the following key areas:
 *1.4.2. Limitations* \
 Despite the comprehensive scope, there were some limitations during my internship:
 
-+ *Limited Project Scope*: \ The internship focused primarily on the development of a single feature (payment scheduling) within the digital wallet, potentially limiting exposure to the broader functionalities of the application.
++ *Limited Project Scope*: \ The internship focused primarily on the development of a single feature (email change/verify) within the digital wallet, potentially limiting exposure to the broader functionalities of the application.
 
 + *Intern-Level Responsibilities*: \ Tasks were assigned with an intern's experience level in mind, potentially offering less opportunity to work on complex backend functionalities or core system architecture.
 
