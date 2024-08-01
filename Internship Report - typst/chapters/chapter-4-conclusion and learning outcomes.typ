@@ -25,11 +25,9 @@
 
 == 4.1. Conclusion
 #v(15pt, weak: true)
- In conclusion, the internship at Khalti Pvt Ltd  as a Software Engineer exposed me to various aspects of Development. This included knowledge gain in diverse DevOps areas like deployment of website with SSL/TLS certificate, Virtual Machine networking, containerization and utilizing Kubernetes (K3s) for container orchestration, implementation of monitoring tools such as Prometheus and Grafana.
- 
- Practical task were done using theoretical knowledge acquired from the program. At the end of it all, adopting different DevOps methodologies that were learnt brought about better system performance and reliability. With the help of mentors and other colleagues, my interpersonal skills were also sharpened during this internshipr period henceforth having a huge positive influence on me both professionally and personally.
+As wrap up to internship at Khalti Pvt Ltd,looking back on the diverse experiences that have shaped growth as a Python developer and a professional in software development. During this enriching time, I delved deep into Python programming, using its flexibility and power to create strong solutions. From scraping complex data on the web to building RESTful APIs with Django and Django Rest Framework, each task challenged me and helped me improve technically. I focused on writing code that not only worked perfectly but also followed the best practices and standards.
 
-
+At Khalti Pvt Ltd, teamwork was crucial, regularly discussing our progress in meetings and supported each other. Giving and receiving feedback during code reviews made all better developers. Besides technical skills, I also learned valuable life lessons. I discovered how to persevere through challenges, how open communication enhances team collaboration, and how learning is a continuous journey.
  
 #v(10pt)
 == 4.2. Learning Outcome
@@ -37,19 +35,13 @@
 
 Here are the key areas where I gained substantial knowledge and practical experience:
 
-#set enum(numbering: "i.")
+#set enum(numbering: "i)")
++ *Technical Skills Development:* Enhanced proficiency in Python programming language, including advanced concepts and libraries,acquired practical experience in web development frameworks such as Django and Django Rest Framework.
+  Mastered techniques for web scraping, API development, database management, and task automation.
 
-+ *Technical Skills* \ Developed my technical skills like operating system troubleshooting, managing bare-metal infrastructure, automating repeated tasks with bash script. Got opportunity to dig deep into using linux command line as well as monitoring tools like monit, prometheus, and grafana. Learned about monitoring various process of linux and send email alert if needed. Along with this various other tools like ansible, used for DevOps were learned. 
++ *Collaboration and Teamwork:* Developed strong communication and collaboration skills through active participation in team meetings, discussions, and code reviews.Worked effectively in a team environment, contributing ideas, sharing progress, and providing feedback to colleagues.
 
-+ *Professional Development* \ Enhanced the ability to work effectively in a team-oriented environment. Problem-solving skills were improved by addressing real-world technical challenges and implementing practical solutions. Professional growth was further shaped by the mentorship and guidance received from experienced professionals.
-
-
-+ *Time Management* \ Effective time management was crucial during the internship, as multiple tasks were assigned simultaneously. Work was prioritized, achievable goals were set, and deadlines were consistently met.
-
-+ *Documentation* \ The importance of thorough documentation was emphasized throughout the internship. Detailed records of configurations, processes, and performance metrics were maintained, ensuring transparency and reproducibility. Comprehensive reports and documentation were compiled to communicate project progress, improving technical writing and communication skills.
-
-+ *Continuous Learning* \ A habit of continuous learning was cultivated during the internship, encouraging the intern to stay updated with the latest industry trends and advancements. Self-directed learning was regularly engaged in, exploring new tools and technologies to enhance existing systems and processes
-
-
++ *Problem-Solving and Critical Thinking:*
+  Discovering and developing analytical and problem-solving skills was a significant aspect of internship journey.Learned how to dig deep to find the root causes of issues and devise effective solutions. Through this process, gained insights into own capabilities and strengths. It was empowering to see myself grow and tackle challenges with greater confidence and competence. This newfound understanding of abilities has been invaluable, shaping my approach to problem-solving and contributing to my personal and professional development.
   
 #pagebreak()

@@ -37,7 +37,7 @@ Bachelor of Science in Computer Science & Information Technology \
 (BSc.CSIT) 8th Semester of Tribhuvan University, Nepal*
 
 \ \
-      *June, 2024*
+      *July, 2024*
 ])
 
 

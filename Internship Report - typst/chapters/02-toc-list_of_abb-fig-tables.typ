@@ -74,19 +74,9 @@
     stroke: none,
     
     "CI/CD   ",    "Continuous Integration and Continuous Development",
-"DHCP", "Dynamic Host Configuration Protocol",
-"DNS", "Domain Name System",
-"HAProxy", "High Availability",
 "HTTPS", "Hypertext Transfer Protocol Secure",
-"IAC   ",    "Infrastructure as Code",
-"ITOPS",       "IT Operation",
-"LVM", "Logical Volume Manager",
-"NFS", "Network File System",
-"SELINUX",     "Secure Linux",
-"SSL ", "Secure Socket Layer",
-"TCP/IP", "Transfer Control Protocol",
-
-    
+    "JSON ",    " JavaScript Object Notation",
+    "API    ",    " Application Programming Interface", 
   )
 
 

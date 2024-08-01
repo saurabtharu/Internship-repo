@@ -1,5 +1,6 @@
-= MENTOR'S RECOMMENDATION
-
+#align(center, text(16pt)[
+ *MENTOR’S RECOMMENDATION*
+])
 \ 
 #text(12pt)[
   This is to recommend that *Anukul Adhikari* has submitted the internship report entitled
@@ -24,8 +25,9 @@ Bakhundole, Lalitpur
 #align(center,
   image("../images/TU Logo.svg", height: 20%)
 )
-
-= SUPERVISOR’S RECOMMENDATION
+#align(center, text(16pt)[
+ *SUPERVISOR’S RECOMMENDATION*
+])
 \
 
   #text(12pt)[
@@ -58,9 +60,9 @@ the evaluation.
 #align(center,
   image("../images/TU Logo.svg", height: 20%)
 )
-
-
-= LETTER OF APPROVAL
+#align(center, text(16pt)[
+*LETTER OF APPROVAL*
+])
 \
 
 #text(12pt)[
@@ -105,8 +107,9 @@ quality as a project for the required degree
 #pagebreak()
 /************************************************************************/
 
-
-= ACKNOWLEDGEMENT
+#align(center, text(16pt)[
+*ACKNOWLEDGEMENT*
+])
 \
 
 

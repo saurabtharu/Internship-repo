@@ -43,7 +43,7 @@ Over the course of my Backend Python Developer Internship at Khalti Digital Wall
 
 The main duty included understanding and implementation of software practices, simplify different parts of the software development process. This entailed creation as well as optimization of various software systems while increasing overall team's productivity. 
 
-Additionally, there was an opportunity given to observe how consumers utilize various features and services of a large digital wallet platform. The users were facing difficulty and also in the customer facing department there was lots of issue regarding  the email address and verification, thus i led the email change/verification system feature. 
+Additionally, there was an opportunity given to observe how consumers utilize various features and services of a large digital wallet platform. The users were facing difficulty and also in the customer facing department there was lots of issue regarding  the email address and verification, thus i worked on the email change/verification system feature. 
 
 Real-world experience with Software Development, complementing the theoretical knowledge I previously acquired, has been one of the best outcomes of this internship. A better understanding of the collaborative and iterative nature of software development was also achieved. Khalti has been able to produce quality software faster by focusing on continuous improvement, optimization, and ensuring effective communication between development and operations teams. These skills and ideas will help in handling future challenges in this area, thereby contributing to becoming an even better software engineer.
 
@@ -68,11 +68,11 @@ Addressing these problems was crucial for maintaining Khalti’s competitive edg
 #set enum(numbering: "i)")
 
 
-+ *Gain Professional Experience*: \ Work in a real-world corporate environment to understand team dynamics, project management, and effective communication within a professional setting.
++ *To work*: \ Work in a real-world corporate environment to understand team dynamics, project management, and effective communication within a professional setting.
 
-+ *Develop Problem-Solving Skills*: \ Tackle real-world challenges and develop solutions, enhancing critical thinking and problem-solving abilities.
++ *To tackle*: \ Tackle real-world challenges and develop solutions, enhancing critical thinking and problem-solving abilities.
 
-+ *Software Deployment Processes*: \ Implement various steps of software development life cycle, to gain hands-on experience developing scalable backend application.
++ *To implement*: \ Implement various steps of software development life cycle, to gain hands-on experience developing scalable backend application.
 
 + *Collaboration with Senior Developers*: \ To collaborate with senior developers and learn best practices in coding and project management.
 

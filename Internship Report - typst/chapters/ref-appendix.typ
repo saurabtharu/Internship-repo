@@ -23,49 +23,28 @@
 
 
 *#figure(
- image("report_images/Harbor init.png"),
+ image("report_images/mobile01.png", height: 50%),
  supplement: none,
  caption: "Initializing Locally Hosted Container Registry"
 )*
-
-
-\ \ \
-
 *#figure(
- image("report_images/Locally-hosted-harbor.png"),
+ image("report_images/mobile02.png", height: 30%),
  supplement: none,
- caption: "Dashboard of Locally Hosted Container Registry"
-)*
-
-*#figure(
- image("report_images/images-pushed to harbor.png"),
- supplement: none,
- caption: "Example of Docker Images Pushed to the Locally Hosted Container Registry"
-)*
-
-
-\ \ \
-
-
-*#figure(
- image("report_images/SSL certificate to website.png"),
- supplement: none,
- caption: "Provisioning of SSL Certificate to Website"
-)*
-
-
-
-*#figure(
- image("report_images/k3s cluster management using GUI rancher.png"),
- supplement: none,
- caption: "Rancher Dashboard for K3S cluster mangement"
+ caption: "Mobile popup showing email change process has started"
 )*
 
 \ \ \
+
 *#figure(
- image("report_images/k3s cluster dashboard in rancher.png"),
+ image("report_images/first_verify.png", height: 30%),
  supplement: none,
- caption: "Rancher UI for a Cluster's Dashboard"
+ caption: "Email sent to old email address"
+)*
+
+*#figure(
+ image("report_images/first_link_clicked.png", width: 70%),
+ supplement: none,
+ caption: "Message shown when verification link clicked"
 )*
 
 
@@ -73,7 +52,32 @@
 
 
 *#figure(
- image("report_images/k3s cluster management using CLI.png"),
+ image("report_images/mobile04.png", height: 40%),
  supplement: none,
- caption: "K3S Cluster Managenemtn using CLI"
+ caption: "Intermediate state of email change"
+)*
+
+
+
+*#figure(
+ image("report_images/second_link_email.png", height: 40%),
+ supplement: none,
+ caption: "Email sent to new address for final verification"
+)*
+
+\ \ \
+*#figure(
+ image("report_images/ca.crt.png", height: 40%),
+ supplement: none,
+ caption: "Profile UI showing verified email address"
+)*
+
+
+\ \ \
+
+
+*#figure(
+ image("report_images/email_verified.png"),
+ supplement: none,
+ caption: "Email sent to newly verified address"
 )*
