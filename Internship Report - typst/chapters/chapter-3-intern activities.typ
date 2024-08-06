@@ -135,31 +135,10 @@ Following table shows the weekly activities the intern performed throughout thei
 
 
 #v(10pt)
-== 3.3. Description of the Project(s) Involved During Internship 
+== 3.3. Description of the Project Involved During Internship 
 #v(15pt, weak: true)
 One of the highlights which really helped me in understanding whole software development process was working on two minor projects during my internship both using django and django rest framework. 
 
-=== 3.3.1. Allow users to securely edit/change email address
-
-In this project, my main goal was to streamline the process of editing/verifying email address focusing on ease of use and security in mind.
-
-+ The project is done using Django, Django Rest Framework, Django Templates, and Celery.
-+ The project involved creating a new API endpoint for users to change their email address.
-+ The project also involved creating a Celery task to send an email verification link to the new email address.
-+ The system was designed to ensure that the email change process was secure and user-friendly.
-
-*3.3.1.1 Functional Requirement* \
-The functional requirements for a system describe what the system should do. Those requirements depend on the kind of software being developed and the expected software users. These are statements of services the system should provide, how the system should react to particular inputs, and how the system should behave in specific situations. 
-
-*#img(
-  image("report_images/internship_usecase.drawio.svg"),
-    "3.1",
-    "Use case diagram"
-)*
-
-The Figure 3.1 represents a consumer and system interaction that shows the basic working features of the application itself, where the user can change their email address and verify it.
-
-*Use Case Description*
 #table(
   columns: 8,
   table.header(
@@ -181,7 +160,68 @@ The Figure 3.1 represents a consumer and system interaction that shows the basic
 
   [UC08], [Handle Network Issues During Email Submission], [Consumer], [Manages scenarios with network connectivity issues during email submission.], [User is adding an email.], [User faces network issues during the submission.], [None], [Error message is displayed, advises checking network.]
 )
-*3.3.1.2 Non-Functional Requirement* \ 
+== 3.4. Tools used
+#v(15pt, weak: true)
+
+*i) Python Debugger* \
+The utilization of the VS Code debugger significantly enhanced my development workflow by allowing me to efficiently identify and resolve issues within the codebase. This tool provided an interactive environment where I could set breakpoints, inspect variables, and step through the code line by line. Consequently, it helped me understand the flow of the application and pinpoint the exact locations of bugs. This experience not only increased my debugging efficiency but also deepened my comprehension of the underlying code structure, leading to more robust and error-free implementations.
+*#img(
+  image("report_images/debugger.png"),
+    "3.6",
+    "Breakpoint in VS Code Debugger"
+  )*
+#set raw(align: start)
+
+* ii) Postman * \
+Using Postman was instrumental in testing and verifying the APIs I developed. This tool enabled me to create, send, and manage HTTP requests, facilitating thorough testing of endpoints and ensuring they behaved as expected. By simulating various scenarios and examining the responses, I was able to identify and rectify issues early in the development process. This practice improved the reliability and performance of the APIs, ensuring seamless integration with other system components and delivering a better user experience.
+*#img(
+  image("report_images/postman.png"),
+    "3.7",
+    "API collections in Postman"
+  )*
+
+
+*iii) Using Git (Merge, Fetch, Cherry-pick)* \
+Mastering Git commands such as merge, fetch, and cherry-pick significantly streamlined my version control processes. Git merge allowed me to combine multiple branches into a cohesive codebase, ensuring all features and fixes were integrated smoothly. Git fetch helped keep my local repository up to date with the remote repository, preventing discrepancies and potential conflicts. Git cherry-pick was particularly useful for selectively applying specific commits from one branch to another, facilitating precise and controlled code updates. These skills enhanced my ability to manage code changes effectively, maintain a clean project history, and collaborate seamlessly with team members.
+
+*iv) Using DRF (Django Rest Framework)* \
+Developing an in-depth understanding of how the Django Rest Framework (DRF) works, including viewsets and routers, was pivotal in building scalable and maintainable APIs. By comprehending the intricacies of viewsets, I could encapsulate common patterns for interacting with the data in a reusable manner. Understanding routers enabled me to automate URL routing, reducing boilerplate code and potential errors. This knowledge empowered me to construct more efficient and organized APIs, facilitating easier maintenance and extensibility of the codebase.
+*#img(
+  image("report_images/viewset.png"),
+    "3.8",
+    "ModelViewSet of Django Rest Framework"
+  )*
+*v) Using Celery Tasks* \
+Learning about Celery tasks and their implementation in my projects played a crucial role in optimizing performance and handling asynchronous operations. By offloading time-consuming tasks, such as sending emails or processing large datasets, to Celery, I was able to ensure that the main application remained responsive and efficient. This capability not only enhanced the user experience by reducing latency but also improved the scalability of the application, allowing it to handle a higher volume of concurrent operations seamlessly.
+*#img(
+  image("report_images/celery.png"),
+    "3.9",
+    "Celery tasks for asynchronous operations"
+  )*
+
+#pagebreak()
+
+== 3.5. Tasks /  Activities Performed 
+
+In this project, my main goal was to streamline the process of editing/verifying email address focusing on ease of use and security in mind.
+
++ The project is done using Django, Django Rest Framework, Django Templates, and Celery.
++ The project involved creating a new API endpoint for users to change their email address.
++ The project also involved creating a Celery task to send an email verification link to the new email address.
++ The system was designed to ensure that the email change process was secure and user-friendly.
+
+*3.5.1 Functional Requirement* \
+The functional requirements for a system describe what the system should do. Those requirements depend on the kind of software being developed and the expected software users. These are statements of services the system should provide, how the system should react to particular inputs, and how the system should behave in specific situations. 
+
+*#img(
+  image("report_images/internship_usecase.drawio.svg"),
+    "3.1",
+    "Use case diagram"
+)*
+
+The Figure 3.1 represents a consumer and system interaction that shows the basic working features of the application itself, where the user can change their email address and verify it.
+
+*3.5.2 Non-Functional Requirement* \ 
 Non-functional requirements are requirements that are not directly concerned with the specified function delivered by the system.
 
 #set enum(numbering: "i)")
@@ -190,7 +230,7 @@ Non-functional requirements are requirements that are not directly concerned wit
 - *Compliance*: \ Ensure the system complies with relevant data protection regulations (like GDPR, if applicable) regarding user data.
 
 
-*3.3.1.3 Feasibility Study* \ 
+*3.5.3 Feasibility Study* \ 
 Before starting the project, a feasibility study is carried out to measure the system's viability. A feasibility study is necessary to determine if creating a new or improved system is friendly with the cost, benefits, operation, technology, and time. The following are the feasibility concerns in this project:
 
 #set enum(numbering: "i)")
@@ -202,10 +242,10 @@ The technical feasibility of enhancing the email edit/update feature in a Django
 + *Economic Feasibility*: \ The economic feasibility for Khalti involves a detailed analysis of costs versus anticipated benefits. The direct costs include development, testing, additional security measures, and training. Operationally, the feature should lead to a reduction in support costs, as users can self-manage their email details, potentially lowering the volume of support requests related to account access issues. From a benefits perspective, enhancing user autonomy and security can improve customer satisfaction and retention—a crucial metric in the competitive fintech space. Calculating the return on investment should factor in these indirect benefits, such as enhanced user trust and reduced risk of security breaches, which can have significant financial implications. As a fintech entity, projecting the feature’s impact on enhancing regulatory compliance and reducing fraud incidents could further justify the investment.
 
 
-*3.3.1.4 System Design* \ 
+*3.5.4 System Design* \ 
 System design defines the components, modules, interfaces, and data for a system to satisfy specified requirements. It can also be defined as creating or altering systems and the processes, practices, models, and methodologies used to develop them. The main objective of the detailed system design is to prepare a system blueprint that meets the goals of the conceptual system design requirements. The system designs for building this project include database schema, input-output design, class diagram, sequence diagram, and activity diagram.
 
-*3.3.1.4 Architectural Design* \
+*3.5.4 Architectural Design* \
 The architectural design shows the architecture of the overall system. The system is based on MVC architecture.
 *#img(
   image("report_images/mvc.png"),
@@ -213,7 +253,7 @@ The architectural design shows the architecture of the overall system. The syste
     "Architectural Design of the System"
 )*
 
-*3.3.1.5 Database Design* \
+*3.5.5 Database Design* \
 The following database schema is the general structure used in the application.
 *#img(
   image("report_images/edit_email_database.png"),
@@ -221,7 +261,7 @@ The following database schema is the general structure used in the application.
     "Table of User Model"
 )*
 
-*3.3.1.6 Class Diagram* \
+*3.5.6 Class Diagram* \
 The class diagram describes the relationships and source code dependencies among other classes.
 *#img(
   image("report_images/edit_email_class.png"),
@@ -231,7 +271,7 @@ The class diagram describes the relationships and source code dependencies among
 The Figure 3.3 illustrates the class diagram of the system. There is only one class, User, which is responsible for handling user data and operations on itself.
 
 
-*3.3.1.7 Sequence Diagram* \
+*3.5.7 Sequence Diagram* \
 A sequence diagram is an interaction diagram because it describes how and in what order a group of objects works together. Sequence diagrams are sometimes known as event diagrams. The sequence diagram of the system is shown below.
 *#img(
   image("report_images/edit_email_sequence.svg"),
@@ -245,55 +285,3 @@ The Figure 3.3 illustrates how the frontend system will interact with the backen
 
 #pagebreak()
 #v(10pt)
-== 3.4. Tasks / Activities Performed 
-#v(15pt, weak: true)
-
-*i) Python Debugger* \
-The utilization of the VS Code debugger significantly enhanced my development workflow by allowing me to efficiently identify and resolve issues within the codebase. This tool provided an interactive environment where I could set breakpoints, inspect variables, and step through the code line by line. Consequently, it helped me understand the flow of the application and pinpoint the exact locations of bugs. This experience not only increased my debugging efficiency but also deepened my comprehension of the underlying code structure, leading to more robust and error-free implementations.
-*#img(
-  image("report_images/debugger.png"),
-    "3.6",
-    "Breakpoint in VS Code Debugger"
-  )*
-#set raw(align: start)
-
-* ii) Using Postman * \
-Using Postman was instrumental in testing and verifying the APIs I developed. This tool enabled me to create, send, and manage HTTP requests, facilitating thorough testing of endpoints and ensuring they behaved as expected. By simulating various scenarios and examining the responses, I was able to identify and rectify issues early in the development process. This practice improved the reliability and performance of the APIs, ensuring seamless integration with other system components and delivering a better user experience.
-*#img(
-  image("report_images/postman.png"),
-    "3.7",
-    "API collections in Postman"
-  )*
-
-
-*iii) Using Git (Merge, Fetch, Cherry-pick)* \
-Mastering Git commands such as merge, fetch, and cherry-pick significantly streamlined my version control processes. Git merge allowed me to combine multiple branches into a cohesive codebase, ensuring all features and fixes were integrated smoothly. Git fetch helped keep my local repository up to date with the remote repository, preventing discrepancies and potential conflicts. Git cherry-pick was particularly useful for selectively applying specific commits from one branch to another, facilitating precise and controlled code updates. These skills enhanced my ability to manage code changes effectively, maintain a clean project history, and collaborate seamlessly with team members.
-
-*iv) In-Depth Understanding of DRF (Django Rest Framework)* \
-Developing an in-depth understanding of how the Django Rest Framework (DRF) works, including viewsets and routers, was pivotal in building scalable and maintainable APIs. By comprehending the intricacies of viewsets, I could encapsulate common patterns for interacting with the data in a reusable manner. Understanding routers enabled me to automate URL routing, reducing boilerplate code and potential errors. This knowledge empowered me to construct more efficient and organized APIs, facilitating easier maintenance and extensibility of the codebase.
-*#img(
-  image("report_images/viewset.png"),
-    "3.8",
-    "ModelViewSet of Django Rest Framework"
-  )*
-*v) Learning About Celery Tasks* \
-Learning about Celery tasks and their implementation in my projects played a crucial role in optimizing performance and handling asynchronous operations. By offloading time-consuming tasks, such as sending emails or processing large datasets, to Celery, I was able to ensure that the main application remained responsive and efficient. This capability not only enhanced the user experience by reducing latency but also improved the scalability of the application, allowing it to handle a higher volume of concurrent operations seamlessly.
-*#img(
-  image("report_images/celery.png"),
-    "3.9",
-    "Celery tasks for asynchronous operations"
-  )*
-*vi) Writing Extendable Code in Python and Advanced OOP Concepts* \
-Learning to write extendable code in Python and mastering advanced object-oriented programming (OOP) concepts significantly improved my coding practices. By adhering to principles such as inheritance, polymorphism, and encapsulation, I was able to create modular and reusable code components. This approach facilitated easier maintenance and scalability of the projects. Understanding design patterns and implementing them appropriately also ensured that the codebase remained flexible and adaptable to future requirements, thereby enhancing the overall software quality and longevity.
-
-
-*vii) Writing Test Cases and Documentation* \
-Developing skills in writing comprehensive test cases and detailed documentation was crucial in ensuring the reliability and maintainability of the code. Leveraging markdown, Mermaid.js to build beautiful readable code with proper usecasediagrams, flow charts and api flows. By covering various test scenarios and edge cases, I could identify and fix potential issues before they reached production, thereby reducing bugs and improving software quality. Writing clear and concise documentation helped create a reliable reference for current and future developers, ensuring that the project could be easily understood, maintained, and extended. This practice promoted better collaboration within the team and facilitated smoother onboarding of new members.
-*#img(
-  image("report_images/test_cases.png", height: 40%),
-    "3.10",
-    "Email test cases"
-  )*
-
-
-#pagebreak()
