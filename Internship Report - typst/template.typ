@@ -86,7 +86,7 @@
 #let img_grid(img, a, nnn, caption) = {
   figure(
  grid(
-      columns: (auto),
+      columns: 2,
       // rows: (auto, auto),
       gutter: 0.5em,
       [#img],

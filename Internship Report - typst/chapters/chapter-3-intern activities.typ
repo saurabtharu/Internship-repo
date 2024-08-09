@@ -210,7 +210,12 @@ In this project, my main goal was to streamline the process of editing/verifying
 + The project also involved creating a Celery task to send an email verification link to the new email address.
 + The system was designed to ensure that the email change process was secure and user-friendly.
 
-*3.5.1 Functional Requirement* \
+=== 3.5.1 System Analysis
+System analysis involves the detailed study of the current system model, leading to
+specification of a new system. A model provided the blueprint of the system. The system
+will be user friendly and will fulfill the user requirements as well. \
+
+*3.5.1.1 Functional Requirement* \
 The functional requirements for a system describe what the system should do. Those requirements depend on the kind of software being developed and the expected software users. These are statements of services the system should provide, how the system should react to particular inputs, and how the system should behave in specific situations. 
 
 *#img(
@@ -221,7 +226,7 @@ The functional requirements for a system describe what the system should do. Tho
 
 The Figure 3.1 represents a consumer and system interaction that shows the basic working features of the application itself, where the user can change their email address and verify it.
 
-*3.5.2 Non-Functional Requirement* \ 
+*3.5.1.2 Non-Functional Requirement* \ 
 Non-functional requirements are requirements that are not directly concerned with the specified function delivered by the system.
 
 #set enum(numbering: "i)")
@@ -230,7 +235,7 @@ Non-functional requirements are requirements that are not directly concerned wit
 - *Compliance*: \ Ensure the system complies with relevant data protection regulations (like GDPR, if applicable) regarding user data.
 
 
-*3.5.3 Feasibility Study* \ 
+*3.5.1.3 Feasibility Study* \ 
 Before starting the project, a feasibility study is carried out to measure the system's viability. A feasibility study is necessary to determine if creating a new or improved system is friendly with the cost, benefits, operation, technology, and time. The following are the feasibility concerns in this project:
 
 #set enum(numbering: "i)")
@@ -242,10 +247,11 @@ The technical feasibility of enhancing the email edit/update feature in a Django
 + *Economic Feasibility*: \ The economic feasibility for Khalti involves a detailed analysis of costs versus anticipated benefits. The direct costs include development, testing, additional security measures, and training. Operationally, the feature should lead to a reduction in support costs, as users can self-manage their email details, potentially lowering the volume of support requests related to account access issues. From a benefits perspective, enhancing user autonomy and security can improve customer satisfaction and retention—a crucial metric in the competitive fintech space. Calculating the return on investment should factor in these indirect benefits, such as enhanced user trust and reduced risk of security breaches, which can have significant financial implications. As a fintech entity, projecting the feature’s impact on enhancing regulatory compliance and reducing fraud incidents could further justify the investment.
 
 
-*3.5.4 System Design* \ 
+=== 3.5.2 System Design \ 
+
 System design defines the components, modules, interfaces, and data for a system to satisfy specified requirements. It can also be defined as creating or altering systems and the processes, practices, models, and methodologies used to develop them. The main objective of the detailed system design is to prepare a system blueprint that meets the goals of the conceptual system design requirements. The system designs for building this project include database schema, input-output design, class diagram, sequence diagram, and activity diagram.
 
-*3.5.4 Architectural Design* \
+*3.5.2.1 Architectural Design* \
 The architectural design shows the architecture of the overall system. The system is based on MVC architecture.
 *#img(
   image("report_images/mvc.png"),
@@ -253,15 +259,16 @@ The architectural design shows the architecture of the overall system. The syste
     "Architectural Design of the System"
 )*
 
-*3.5.5 Database Design* \
+*3.5.2.2 Database Design* \
 The following database schema is the general structure used in the application.
-*#img(
-  image("report_images/edit_email_database.png"),
-    "3.3",
-    "Table of User Model"
-)*
+#img_grid(
+  image("report_images/edit_email_database.png"),  // First image
+  image("report_images/meta.jpeg"),  // Second image
+  "3.3",
+  "Comparison of User Models"
+)
 
-*3.5.6 Class Diagram* \
+*3.5.2.3 Class Diagram* \
 The class diagram describes the relationships and source code dependencies among other classes.
 *#img(
   image("report_images/edit_email_class.png"),
@@ -271,7 +278,7 @@ The class diagram describes the relationships and source code dependencies among
 The Figure 3.3 illustrates the class diagram of the system. There is only one class, User, which is responsible for handling user data and operations on itself.
 
 
-*3.5.7 Sequence Diagram* \
+*3.5.2.4 Sequence Diagram* \
 A sequence diagram is an interaction diagram because it describes how and in what order a group of objects works together. Sequence diagrams are sometimes known as event diagrams. The sequence diagram of the system is shown below.
 *#img(
   image("report_images/edit_email_sequence.svg"),
@@ -281,7 +288,88 @@ A sequence diagram is an interaction diagram because it describes how and in wha
 The Figure 3.3 illustrates how the frontend system will interact with the backend api to change the email address of the user.
 
 
+=== 3.5.3 Implementation \
+The implementation of the email change process was designed with a focus on security, user experience, and scalability. The process involved multiple stages, including authentication, email verification, and the handling of potential errors or misuse scenarios. This section details the step-by-step implementation of the user email change process, highlighting key components and their interactions within the system. \
 
+#set enum(numbering: "i)")
++ *Authentication and Security*: \ The first step in the email change process involves authenticating the user to ensure that the request is legitimate. Users can authenticate using either their password or biometric data. The chosen method is validated against the stored credentials. To mitigate security risks, the system tracks the number of incorrect authentication attempts. If the user exceeds a predefined threshold of failed attempts, the email change process is temporarily locked for a configured amount of time. This security measure is logged in the User model, where the state of the request and the number of failed attempts are recorded. This ensures that any potential fraudulent activity is monitored and controlled.
++ *Initiating the Email Change Request*: \ Once authenticated, the user can initiate the email change process. A new entry is created in the User model, where the state is set to REQUESTED, and the new email address is stored. This entry serves as the starting point for the subsequent verification steps. The system then sends a verification email to the new address. This email contains a unique verification link generated by concatenating the index (id), timestamp, and email type. This string is then encrypted using HMAC (Hash-based Message Authentication Code) with a salt retrieved from the application settings. The generated token is stored in the User model under the info field with the key current_token.
++ *Email Verification Process*: \ The user receives the verification email and clicks the provided link. Upon clicking the link, the system decodes the verification string to extract the user information and the token. The token is then compared against the stored value in the User model. If the tokens match, the process continues, and the current_token field is set to None to prevent reuse. At this point, the user's email in the User model is updated with the new address, and the is_email_verified field is set to true. The state of the User instance is updated to APPROVED, marking the completion of the email change process. Additionally, the system sets the email_verified_on field in the User model to record the timestamp of the verification.
++ *Handling Verification Resends*: \ If the user does not receive the verification email, they can request to resend it. The system retrieves the last User instance for the user with a REQUESTED state and resends the verification email. This process generates a new token and follows the same steps as the initial email verification, ensuring that the user can complete the process without starting over.
++ *Finalization and Error Handling*: \ The system is designed to handle various edge cases, such as the presence of an unverified email in another user's account or multiple verification attempts. If the new email is already associated with another account but has not been verified, the system clears the email from that account and assigns it to the requesting user, marking it as verified. This prevents email address conflicts and ensures that each email is uniquely associated with a single user account. The implementation also includes a mechanism to decline email change requests if the verification process is completed by another user before the current user. This ensures that only one user can successfully verify a given email address, preventing potential security breaches.
++ *Endpoints and API Integration*: \ Several API endpoints were developed to support the email change process:
+  #set enum(numbering: "i)")
+
+    - *Check Email Availability*: \ This endpoint verifies if the new email is available for use.
+    - *Change Email Initiation*: \ Initiates the email change process, validating the password/biometric data and sending the initial verification email.
+    - *Email Validation Link*: \ Handles the verification of both old and new email addresses through a signed token.
+    - *Email Status*: \ Provides real-time status updates on the email change process, including any locked states or errors encountered during the process.
+
+The implementation of these endpoints ensures a seamless and secure experience for users, allowing them to update their email addresses with confidence.
+
+=== 3.5.4 Testing \
+Testing the email change process was a critical part of the implementation, ensuring that all aspects of the system functioned as intended, particularly concerning security, reliability, and user experience. The testing process included unit tests, integration tests, and user acceptance tests (UAT), covering various scenarios, including edge cases and potential security vulnerabilities.
+
+
+#set enum(numbering: "i)")
++ *Unit Testing*: \ Unit tests were implemented to verify the functionality of individual components and methods within the email change process. These tests focused on the following key areas:
+
+    #set enum(numbering: "i)")
+    - *Authentication Validation*: \
+        Tests were conducted to ensure that the system correctly validates both password and biometric authentication methods.
+        Tests included scenarios where incorrect credentials were provided, verifying that the system accurately logs the number of failed attempts and enforces the lockout policy after exceeding the allowed threshold.
+
+    - *Token Generation and Encryption*: \
+        The HMAC token generation process was tested to ensure that tokens were unique, correctly encrypted, and stored securely.
+        Tests also verified the correct handling of the salt from the application settings, ensuring consistent encryption across different environments.
+
+    - *Model Integrity*: \
+        The UserInfoChange model was tested to ensure that data was correctly recorded, particularly the states (e.g., REQUESTED, APPROVED, DECLINED), email addresses, and tokens.
+        Tests ensured that the transition between states was handled correctly and that the appropriate fields were updated during the process.
+
+    - *Email Sending*: \
+        The system's ability to send verification emails to the correct addresses (both old and new) was tested, including scenarios where the background email-sending process might fail or experience delays.
+        Tests ensured that the system correctly handled these failures, such as by retrying email sends or logging errors for further investigation.
+
++ *Integration Testing*: \ Integration tests were conducted to validate the interaction between various components of the system. These tests ensured that the entire email change process worked seamlessly across different modules and external systems:
+
+    #set enum(numbering: "i)")
+    - *End-to-End Email Change Process*: \
+        Integration tests simulated the complete email change process, from the initial request to the final verification. These tests verified that the user could successfully change their email address, receive the correct verification emails, and have their information updated in the system.
+        Tests also covered the case where the user requests a resend of the verification email, ensuring that the process worked consistently across multiple attempts.
+
+    - *Edge Case Handling*: \
+        Tests were conducted for scenarios where the email address might already be associated with another user account, particularly when that account's email is unverified. These tests ensured that the system correctly handled such cases, reassigning the email to the requesting user and clearing it from the previous account.
+        Other edge cases included scenarios where the user might attempt to verify the same email address simultaneously in multiple sessions, testing the system's ability to handle these situations securely.
+
+    - *API Endpoint Testing*: \
+        Each API endpoint involved in the email change process was tested to ensure proper functionality, including the ability to handle various input conditions (e.g., invalid tokens, expired tokens, unavailable emails).
+        Tests also verified the responses from the endpoints, ensuring that users received clear and accurate feedback regarding the status of their requests.
+
++ *User Acceptance Testing (UAT)* \ User Acceptance Testing involved real users interacting with the system to validate the email change process from a usability and user experience perspective. The following aspects were tested:
+
+    #set enum(numbering: "i)")
+    - *Usability*: \
+        Users were asked to initiate the email change process, follow the verification steps, and confirm that they could successfully update their email address. Feedback was collected to identify any usability issues or areas of confusion.
+        The process was tested across different devices and browsers to ensure consistent user experience regardless of the platform used.
+
+    - *Error Handling and Messaging*: \
+        Test cases included scenarios where users entered incorrect passwords, did not receive verification emails, or attempted to use an email address already in use. The system's error messages and guidance were evaluated to ensure they were clear, helpful, and directed users on how to proceed.
+        Users also tested the lockout feature by intentionally failing multiple authentication attempts, ensuring that the system appropriately enforced security measures and communicated the lockout status.
+
+    - *Performance*: \
+        The email verification process, particularly the background email-sending tasks, was tested under load to assess the system's performance. This included scenarios where multiple users initiated email changes simultaneously, ensuring that the system could handle the load without delays or failures.
+
+
++ *Security Testing*: \ Given the sensitive nature of email addresses and the potential risks of unauthorized changes, extensive security testing was conducted:
+
+    #set enum(numbering: "i)")
+
+    - *Token Expiration and Validation*: \
+        Tests were performed to ensure that the verification tokens expired after a set period and could not be reused. The system's ability to detect and reject tampered or invalid tokens was also tested.
+
+    - *Cross-User Verification Attempts*: \
+        Scenarios were tested where one user might attempt to use another user's verification link. The system's ability to prevent such actions and ensure that only the intended user could verify their email address was validated.
 
 #pagebreak()
 #v(10pt)

@@ -2,33 +2,22 @@
 
 = Chapter 4: Conclusion and Learning Outcomes 
 \
-/*
-== 4.1. Completed Tasks
-#v(15pt, weak: true)
-#set enum(numbering: "i.")
-+ Sucessfully deployed nginx website and implemented SSL Certificate for secure communication.
-
-+ Deployed Java Application in tomcat and configured nginx for reverse proxy for the java application.
-+ Configured to monitor a particular process and send alert on crashes.
-+ Configured self-hosted git service on local infrastructure .
-+ Setup MySQL replication for data backup and incident recovery
-+ Configured distributed file system (NFS) to share files among various nodes within a network.
-
-
-== 4.2 Remaining Tasks
-
-+ ArgoCD for continuous delivery.
-
-+ K3S for managing workload and services.
-*/
 
 
 == 4.1. Conclusion
 #v(15pt, weak: true)
-As wrap up to internship at Khalti Pvt Ltd,looking back on the diverse experiences that have shaped growth as a Python developer and a professional in software development. During this enriching time, I delved deep into Python programming, using its flexibility and power to create strong solutions. From scraping complex data on the web to building RESTful APIs with Django and Django Rest Framework, each task challenged me and helped me improve technically. I focused on writing code that not only worked perfectly but also followed the best practices and standards.
+During my tenure as a Backend Python Developer intern at Khalti Pvt Ltd, I was tasked with developing and securing the user email change process, a critical feature within the company’s ecosystem. This project provided me with a comprehensive experience, encompassing the entire software development lifecycle—from requirement analysis and architectural design to implementation and rigorous testing.
 
-At Khalti Pvt Ltd, teamwork was crucial, regularly discussing our progress in meetings and supported each other. Giving and receiving feedback during code reviews made all better developers. Besides technical skills, I also learned valuable life lessons. I discovered how to persevere through challenges, how open communication enhances team collaboration, and how learning is a continuous journey.
- 
+The primary objective was to create a secure, scalable, and user-friendly process that would allow users to update their email addresses while ensuring the integrity and security of their data. To achieve this, I implemented robust authentication mechanisms, including password and biometric validation, and developed a secure token generation system using HMAC encryption. These measures were essential in safeguarding user information against unauthorized access and ensuring that only legitimate requests were processed.
+
+Moreover, I collaborated closely with senior developers and cross-functional teams, which enhanced my ability to write clean, maintainable code and emphasized the importance of thorough documentation. This collaborative environment was instrumental in refining the design and implementation of the feature, ensuring that it met the high security and usability standards required in a fintech application.
+
+The testing phase was particularly intensive, involving unit tests, integration tests, and user acceptance testing (UAT). These tests were crucial in verifying the functionality, security, and user experience of the email change process, ensuring that the feature was both reliable and user-friendly. 
+
+This internship provided me with invaluable hands-on experience in backend development within a real-world, high-stakes environment. It also significantly deepened my understanding of secure software development practices, particularly in the context of financial technology. The mentorship and support I received throughout this project were instrumental in my professional growth, equipping me with the skills and confidence to tackle complex challenges in future endeavors.
+
+Overall, this experience has solidified my interest in backend development and has been a critical stepping stone in my career as a software developer.
+
 #v(10pt)
 == 4.2. Learning Outcome
 #v(15pt, weak: true)
